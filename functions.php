@@ -100,6 +100,8 @@ class Eco_Footer_Nav_Walker extends Walker_Nav_Menu
     }
 }
 
+wp_enqueue_style('eco-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap', [], null);
+
 
 tailpress();
 

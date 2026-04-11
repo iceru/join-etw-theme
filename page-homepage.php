@@ -7,196 +7,368 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], '11');
     wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '11', true);
     wp_enqueue_script('lenis-js', 'https://unpkg.com/lenis@1.1.20/dist/lenis.min.js', [], '1.1.20', true);
-    wp_enqueue_style('eco-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap', [], null);
+    wp_enqueue_style('eco-fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600;700&display=swap', [], null);
 });
 
 get_header();
 ?>
 
-<!-- HERO SLIDER -->
-<section id="hero" class="relative">
-    <div class="swiper hero-swiper w-full aspect-[4/3] md:aspect-video">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Bali Nature" class="w-full h-full object-cover text-white">
-                <div class="absolute inset-0 bg-gradient-to-b from-eco-deep/40 to-eco-deep/70"></div>
-            </div>
-            <div class="swiper-slide relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1600" alt="Bali Culture" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-b from-eco-deep/40 to-eco-deep/70"></div>
-            </div>
-            <div class="swiper-slide relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1600" alt="Bali Coast" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-b from-eco-deep/40 to-eco-deep/70"></div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
+<!-- HERO -->
+<section class="mt-22 ">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/banner-1.png" alt="Eco Tourism Week 2026 – Bali"
+        class="w-full h-full object-cover">
 
-<!-- COUNTDOWN & TRAILER -->
-<section id="countdown" class="bg-eco-cream py-12 md:py-20 px-0 md:px-6 overflow-hidden">
-    <div class="max-w-[1100px] mx-auto text-center px-6 md:px-0">
-        <span class="text-eco-leaf text-[0.75rem] font-bold tracking-[0.25em] uppercase mb-4 block">Mark Your Calendar</span>
-        <h2 class="font-display text-eco-deep text-[clamp(1.75rem,4vw,2.75rem)] font-light leading-tight mb-8">Counting Down to Eco Tourism Week 2026</h2>
-        
-        <div class="flex justify-center gap-3 md:gap-6 flex-wrap mb-12 md:mb-20 text-center">
-            <div class="bg-white border border-eco-stone py-4 md:py-8 px-2 md:px-4 min-w-[80px] md:min-w-[140px]">
-                <span class="font-display text-eco-forest text-[2.5rem] md:text-[4rem] font-light leading-none block" id="cd-days">00</span>
-                <span class="text-eco-earth text-[0.6rem] md:text-[0.7rem] font-bold tracking-[0.2em] uppercase mt-1 md:mt-2 block">Days</span>
-            </div>
-            <div class="bg-white border border-eco-stone py-4 md:py-8 px-2 md:px-4 min-w-[80px] md:min-w-[140px]">
-                <span class="font-display text-eco-forest text-[2.5rem] md:text-[4rem] font-light leading-none block" id="cd-hours">00</span>
-                <span class="text-eco-earth text-[0.6rem] md:text-[0.7rem] font-bold tracking-[0.2em] uppercase mt-1 md:mt-2 block">Hours</span>
-            </div>
-            <div class="bg-white border border-eco-stone py-4 md:py-8 px-2 md:px-4 min-w-[80px] md:min-w-[140px]">
-                <span class="font-display text-eco-forest text-[2.5rem] md:text-[4rem] font-light leading-none block" id="cd-minutes">00</span>
-                <span class="text-eco-earth text-[0.6rem] md:text-[0.7rem] font-bold tracking-[0.2em] uppercase mt-1 md:mt-2 block">Min</span>
-            </div>
-            <div class="bg-white border border-eco-stone py-4 md:py-8 px-2 md:px-4 min-w-[80px] md:min-w-[140px]">
-                <span class="font-display text-eco-forest text-[2.5rem] md:text-[4rem] font-light leading-none block" id="cd-seconds">00</span>
-                <span class="text-eco-earth text-[0.6rem] md:text-[0.7rem] font-bold tracking-[0.2em] uppercase mt-1 md:mt-2 block">Sec</span>
+</section>
+<section id="hero" class="relative pt-24 flex items-end bg-eco-deep overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-eco-deep via-eco-deep/50 to-transparent"></div>
+
+    <div class="relative z-10 w-full pb-16 md:pb-24 px-6">
+        <div class="container mx-auto">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm md:text-sm mb-4">30-31 May 2026 ·
+                Bali Beach Convention Center, Sanur</p>
+            <h1 class="font-display text-white text-[clamp(3rem,9vw,7rem)] font-light leading-[0.95] mb-8 max-w-4xl">
+                Eco Tourism<br><em>Week 2026</em>
+            </h1>
+            <div class="flex flex-wrap gap-3">
+                <?php
+                $roles = [
+                    'Volunteer' => '#volunteer',
+                    'Eco Pitch' => '#eco-pitch',
+                    'Exhibitor' => '#exhibitor',
+                    'Participant' => '#participant',
+                    'Performance' => '#performance',
+                    'Sponsorship' => 'https://example.com/sponsorship',
+                    'Media Partner' => 'https://example.com/media-partner',
+                ];
+                foreach ($roles as $label => $url):
+                    $is_external = str_starts_with($url, 'http');
+                    ?>
+                    <a href="<?php echo esc_url($url); ?>" <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
+                        class="px-5 py-2.5 border border-white/30 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
+                        <?php echo esc_html($label); ?>
+                    </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
-        
-    <div class="aspect-video w-full max-w-[1240px] mx-auto md:rounded-2xl overflow-hidden shadow-2xl bg-black">
-        <iframe 
-            class="w-full h-full border-0"
-            src="https://www.youtube.com/embed/placeholder" 
-            title="Eco Tourism Week Trailer" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+
+    <div class="swiper-pagination absolute bottom-6 left-0 right-0 z-20"></div>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown" class="bg-eco-deep border-t border-white/10">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+            <div class="py-14 md:py-20 border-b lg:border-b-0 lg:border-r border-white/10">
+                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-6">Counting Down</p>
+                <div class="flex gap-0">
+                    <?php foreach (['days' => 'Days', 'hours' => 'Hrs', 'minutes' => 'Min', 'seconds' => 'Sec'] as $id => $label): ?>
+                        <div
+                            class="flex-1 border-r border-white/10 last:border-r-0 pr-4 md:pr-8 mr-4 md:mr-8 last:pr-0 last:mr-0">
+                            <span class="font-display text-white text-[3rem] md:text-[5rem] font-light leading-none block"
+                                id="cd-<?php echo $id; ?>">00</span>
+                            <span
+                                class="text-white/30 text-[0.6rem] font-semibold tracking-[0.2em] uppercase mt-1 block"><?php echo $label; ?></span>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <div class="py-14 md:py-20 lg:pl-16">
+                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-6">The Event</p>
+                <h2 class="font-display text-white text-[clamp(1.5rem,3vw,2.2rem)] font-light leading-snug mb-4">
+                    Tourism as a Force<br>for Good
+                </h2>
+                <p class="text-white/80 text-sm leading-relaxed font-light max-w-sm">
+                    The Meru Eco Tourism Week 4th Edition · Bali Beach Convention Center
+                </p>
+            </div>
+
+        </div>
     </div>
 </section>
 
-<!-- EXPLANATION & COLLAGE -->
+<!-- VIDEO -->
+<section class="bg-black">
+    <div class="aspect-video w-full max-w-none">
+        <video src="<?php echo get_template_directory_uri(); ?>/videos/etw.mp4" controls
+            poster="<?php echo get_template_directory_uri(); ?>/images/banner-1.png"
+            class="w-full h-full object-cover"></video>
+    </div>
+</section>
+
+<!-- ABOUT -->
 <section id="explanation" class="bg-white">
-    <div class="max-w-[900px] mx-auto py-16 md:py-24 px-6 text-center">
-        <h2 class="font-display text-eco-deep text-[clamp(1.75rem,5vw,3rem)] leading-[1.1] mb-6">
-            Does Tourism Destroy Nature or Can It Regenerate?
-        </h2>
-        <h3 class="text-eco-forest text-[1rem] md:text-[1.2rem] font-bold tracking-[0.15em] uppercase mb-12 md:mb-16">
-            The Meru Eco Tourism Week 4th Edition
-        </h3>
-        
-        <div class="text-[1.1rem] md:text-[1.2rem] text-gray-600 leading-relaxed text-left max-w-[750px] mx-auto">
-            <p class="mb-8">
-                Recent environmental incidents across Indonesia have demonstrated that environmental degradation is not an abstract risk, but a real and immediate threat that affects communities, wildlife, and economic stability. For Bali, safeguarding nature is not only an environmental responsibility, but a strategic necessity for the future of tourism.
-            </p>
-            <p>
-                Eco Tourism Week 2026 responds to this reality by re-centering nature and biodiversity within the tourism conversation, encouraging the industry to move beyond sustainability as compliance and towards regeneration as a shared responsibility.
-            </p>
+    <div class="container mx-auto px-6 py-20 md:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 md:gap-24 items-start">
+            <div class="lg:sticky lg:top-32">
+                <p class="text-eco-mid font-semibold tracking-[0.3em] uppercase text-sm mb-4">About</p>
+                <h2 class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-[1.05]">
+                    Regenerating<br>Bali<br><em>Together</em>
+                </h2>
+            </div>
+            <div class="space-y-8 text-[1rem] md:text-[1.05rem] text-gray-400 leading-[1.9] font-light">
+                <p
+                    class="text-gray-700 text-[1.1rem] md:text-[1.25rem] leading-relaxed font-light border-l-2 border-eco-gold pl-6">
+                    Bali has long been celebrated as one of the world's most iconic tourism destinations — yet the
+                    global narrative has increasingly focused on its environmental pressures.
+                </p>
+                <p>Across Bali, a powerful movement is taking place. Hotels, restaurants, local communities, NGOs, and
+                    solution providers are actively transforming how tourism operates — shifting from extractive models
+                    towards regenerative practices that restore ecosystems, protect biodiversity, and strengthen local
+                    livelihoods.</p>
+                <p>Eco Tourism Week 2026 brings this story to the forefront. Rather than focusing on what is broken,
+                    this platform highlights what is working: real solutions, measurable impact, and collaborative
+                    efforts that demonstrate how tourism can become a force for good.</p>
+            </div>
         </div>
     </div>
 
-    <!-- FULL WIDTH COLLAGE -->
+    <!-- COLLAGE -->
     <div class="grid grid-cols-2 lg:grid-cols-4 w-full">
-        <div class="aspect-square relative overflow-hidden group"><img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=800" alt="Past Event 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group"><img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800" alt="Past Event 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800" alt="Past Event 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Past Event 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group hidden lg:block"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800" alt="Past Event 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group hidden lg:block"><img src="https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?w=800" alt="Past Event 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group hidden lg:block"><img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800" alt="Past Event 7" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <div class="aspect-square relative overflow-hidden group hidden lg:block"><img src="https://images.unsplash.com/photo-1524492459426-edec9369528f?w=800" alt="Past Event 8" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+        <?php
+        $collage_imgs = [
+            'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=800',
+            'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800',
+            'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800',
+            'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
+            'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800',
+            'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?w=800',
+            'https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800',
+            'https://images.unsplash.com/photo-1524492459426-edec9369528f?w=800',
+        ];
+        foreach ($collage_imgs as $i => $img):
+            $hidden = $i >= 4 ? 'hidden lg:block' : '';
+            ?>
+            <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
+                <img src="<?php echo $img; ?>" alt="ETW Past Event"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+        <?php endforeach; ?>
     </div>
 </section>
 
-<!-- FACT SHEET - 2 GRIDS -->
-<section id="fact-sheet" class="bg-eco-cream py-16 md:py-24 px-6">
-    <div class="max-w-[1100px] mx-auto">
-        <span class="text-eco-leaf text-[0.75rem] font-bold tracking-[0.25em] uppercase mb-4 block text-center">Our Mission</span>
-        <h2 class="font-display text-eco-deep text-[clamp(1.75rem,4vw,2.75rem)] font-light leading-tight mb-16 md:mb-24 text-center">Eco Tourism Fact Sheet</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            <div class="flex flex-col">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1000" alt="Sustainable Business" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl mb-8">
-                <h4 class="font-display text-eco-deep text-[1.75rem] md:text-[2rem] mb-6">Sustainable Business Potential</h4>
-                <ul class="space-y-4 text-[1rem] md:text-[1.1rem] text-gray-600 leading-relaxed">
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Identify green investment opportunities in Bali's growing eco-sector.</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Connect with local innovators building sustainable travel solutions.</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Understand market trends driving regenerative tourism in Indonesia.</li>
-                </ul>
+<!-- FACT SHEET -->
+<section id="fact-sheet" class="bg-eco-deep py-20 md:py-32 px-6">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
+            <div>
+                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Why It Matters</p>
+                <h2 class="font-display text-white text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight">
+                    The Market<br>Opportunity
+                </h2>
             </div>
-            
-            <div class="flex flex-col">
-                <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=1000" alt="Regenerative Solutions" class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl mb-8">
-                <h4 class="font-display text-eco-deep text-[1.75rem] md:text-[2rem] mb-6">The ETW Concept & Impact</h4>
-                <ul class="space-y-4 text-[1rem] md:text-[1.1rem] text-gray-600 leading-relaxed">
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Moving beyond sustainability towards active ecological regeneration.</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Serving as a central hub for industry leaders and conservationists.</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle" class="text-eco-leaf w-5 h-5 shrink-0"></i> Providing practical functions for community-led tourism development.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FACTS - 4 GRIDS -->
-<section id="facts" class="bg-white py-16 md:py-24 px-6 text-center">
-    <div class="max-w-[1200px] mx-auto">
-        <span class="text-eco-leaf text-[0.75rem] font-bold tracking-[0.25em] uppercase mb-4 block text-center">Impact so far</span>
-        <h2 class="font-display text-eco-deep text-[clamp(1.75rem,4vw,2.75rem)] font-light leading-tight mb-16 md:mb-24 text-center">Eco Tourism Week 2025 Facts</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-20 md:mb-32">
-            <div class="flex flex-col items-center">
-                <img src="https://images.unsplash.com/photo-1531055060086-51c1a2ee62dd?w=600" alt="Exhibitors" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg mb-6">
-                <h5 class="font-display text-eco-leaf text-[2rem] md:text-[2.5rem] mb-2 leading-none">50+</h5>
-                <p class="font-bold text-eco-deep uppercase tracking-wider text-xs md:text-sm">Jumlah Exhibitor</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="https://images.unsplash.com/photo-1511578334221-d302391030cd?w=600" alt="Visitors" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg mb-6">
-                <h5 class="font-display text-eco-leaf text-[2rem] md:text-[2.5rem] mb-2 leading-none">2,500+</h5>
-                <p class="font-bold text-eco-deep uppercase tracking-wider text-xs md:text-sm">Jumlah Pengunjung</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="https://images.unsplash.com/photo-1517245366810-6062f8d2514d?w=600" alt="Sectors" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg mb-6">
-                <h5 class="font-display text-eco-leaf text-[2rem] md:text-[2.5rem] mb-2 leading-none">12</h5>
-                <p class="font-bold text-eco-deep uppercase tracking-wider text-xs md:text-sm">Sector Pengunjung</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Innovators" class="w-full h-[200px] md:h-[250px] object-cover rounded-lg mb-6">
-                <h5 class="font-display text-eco-leaf text-[2rem] md:text-[2.5rem] mb-2 leading-none">100</h5>
-                <p class="font-bold text-eco-deep uppercase tracking-wider text-xs md:text-sm">Eco Pitch Teams</p>
-            </div>
-        </div>
-
-        <!-- ECO PITCH CTA -->
-        <div class="bg-eco-deep py-16 md:py-24 px-8 md:px-12 rounded-[24px] text-center text-white relative overflow-hidden">
-            <div class="absolute -top-12 -right-12 w-48 h-48 bg-eco-mid/20 rounded-full blur-2xl"></div>
-            <h2 class="font-display text-eco-sand text-[2.5rem] md:text-[3.5rem] mb-6 leading-tight">ECO PITCH 2025 FACTS</h2>
-            <p class="text-[1rem] md:text-[1.1rem] text-white/70 max-w-[700px] mx-auto mb-10 md:mb-12 leading-relaxed">
-                5 Kategori Journey program eco pitch. Open your potential 10,000 hotels in Bali. Join our most innovative program yet.
+            <p class="text-white/60 text-sm font-light max-w-xs leading-relaxed">
+                Sustainable tourism is one of the fastest-growing investment categories in Southeast Asia.
             </p>
-            <a href="#join-eco-pitch" class="bg-eco-sand text-eco-deep font-bold px-8 md:px-10 py-3 md:py-4 uppercase tracking-[0.1em] text-xs md:text-sm hover:bg-white hover:-translate-y-1 transition duration-300 inline-block">Join Eco Pitch</a>
+        </div>
+
+        <?php
+        $fact_sections = [
+            [
+                'number' => '01',
+                'title' => 'The Multi-Billion Dollar Market Opportunity',
+                'points' => [
+                    ['Global Trajectory', 'The global online travel market is estimated to reach $1,835.6 billion by 2031.'],
+                    ['Regional Growth', "Indonesia's market share is expected to increase the tourism and hotel market by $22 billion until 2026."],
+                    ['F&B Sector', 'Spending on food and beverages is projected to reach $194 billion by 2030, with the transport and food delivery GMV growing to $16.8 billion by 2025.'],
+                ],
+            ],
+            [
+                'number' => '02',
+                'title' => 'The "10,000 Hotels" Untapped Market',
+                'points' => [
+                    ['Direct Access', 'Bali currently has approximately 10,000 hotels, representing a massive potential for eco-business integrations.'],
+                    ['Shift to Regenerative', 'The industry is moving away from extractive models toward regenerative practices that restore ecosystems and protect biodiversity.'],
+                    ['Solution Categories', 'Five key areas: Water & Conservation, Waste Management, Technology & Renewable Energy, Responsible Sourcing, and Experience & Culture.'],
+                ],
+            ],
+            [
+                'number' => '03',
+                'title' => 'Industry Sentiment & Proven Interest',
+                'points' => [
+                    ['Diverse Stakeholders', 'Previous editions attracted HORECA, private sector corporations, NGOs, sustainable suppliers, and tourism academics.'],
+                    ['Business Matching', 'Eco Tourism Week acts as a hub connecting active leading buyers with participating exhibitors.'],
+                    ['Impactful Recognition', 'The Eco Pitch program recognizes the most innovative and impactful solutions, providing high visibility for sustainable startups.'],
+                ],
+            ],
+            [
+                'number' => '04',
+                'title' => 'Bali as a Global Model',
+                'points' => [
+                    ['Movement Leaders', 'Hotels and local communities are already shifting toward practices that strengthen local livelihoods.'],
+                    ['Scalable Solutions', 'ETW 2026 showcases solutions that can serve as a model for destinations globally, not just in Bali.'],
+                    ['Collaborative Ecosystem', 'Real, measurable impact through collaborative efforts between solution providers and tourism operators.'],
+                ],
+            ],
+        ];
+        ?>
+
+        <div class="divide-y divide-white/10 border-t border-white/10">
+            <?php foreach ($fact_sections as $section): ?>
+                <div class="py-10 md:py-14 group">
+
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span
+                            class="font-display text-white/20 text-2xl font-light leading-none shrink-0"><?php echo $section['number']; ?></span>
+                        <h3
+                            class="font-display text-white text-[1.4rem] md:text-[1.75rem] font-light leading-snug group-hover:text-eco-gold transition-colors duration-300">
+                            <?php echo $section['title']; ?>
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pl-0 md:pl-14">
+                        <?php foreach ($section['points'] as $point): ?>
+                            <div class="border-l-2 border-eco-gold/40 pl-5">
+                                <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
+                                    <?php echo $point[0]; ?></p>
+                                <p class="text-white/80 text-sm md:text-base font-light leading-relaxed">
+                                    <?php echo $point[1]; ?></p>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+    </div>
+</section>
+
+<!-- ETW 2025 FACTS -->
+<section id="facts" class="bg-white py-20 md:py-32 px-6">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
+            <div>
+                <p class="text-eco-mid font-semibold tracking-[0.3em] uppercase text-sm mb-4">Impact So Far</p>
+                <h2 class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight">
+                    ETW 2025<br>Facts & Figures
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-eco-stone mb-px">
+            <?php
+            $stats = [
+                ['50', 'Exhibitors'],
+                ['339', 'Visitors'],
+                ['8+', 'Visitor Profiles'],
+            ];
+            foreach ($stats as $s): ?>
+                <div class="bg-white py-14 px-10 text-center">
+                    <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">
+                        <?php echo $s[0]; ?>
+                    </p>
+                    <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm"><?php echo $s[1]; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <p
+            class="text-center text-lg text-eco-forest font-light py-4 bg-white border-t border-eco-stone mb-16 md:mb-24">
+            HORECA · Private Sector · NGOs/CSOs · Sustainable Suppliers · Tourism Academics · Associations · Media ·
+            Public
+        </p>
+
+        <!-- ECO PITCH -->
+        <div class="bg-eco-deep relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5">
+                <div
+                    class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3">
+                </div>
+                <div
+                    class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4">
+                </div>
+            </div>
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0">
+                <div class="p-10 md:p-16 border-b lg:border-b-0 lg:border-r border-white/10">
+                    <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition
+                    </p>
+                    <h2 class="font-display text-white text-[clamp(2.2rem,5vw,4rem)] font-light leading-tight mb-6">
+                        Eco Pitch<br><em class="text-eco-gold">2026</em>
+                    </h2>
+                    <p class="text-white/40 text-sm font-light mb-8 max-w-md leading-relaxed">
+                        5 exhibition categories · 3 award tracks — Most Favorite, Most Innovative, Most Impactful.<br>
+                        Open your potential with 10,000 hotels in Bali.
+                    </p>
+                    <div class="flex flex-col gap-2 max-w-lg">
+                        <?php
+                        $categories = [
+                            ['Water, Conservation & Sustainable Solutions', 'bg-[#2E7D32] text-white'],
+                            ['Experience, Community & Culture', 'bg-[#1565C0] text-white'],
+                            ['Responsible Purchasing & Sourcing', 'bg-[#E65100] text-white'],
+                            ['Technology, Renewable Energy & Machinery', 'bg-[#1A2B1A] text-white border border-white/20'],
+                            ['Waste Solution Management', 'bg-[#757575] text-white'],
+                        ];
+                        foreach ($categories as $cat): ?>
+                            <div
+                                class="flex items-center gap-3 <?php echo $cat[1]; ?> px-4 py-2.5 text-xs font-semibold tracking-wide">
+                                <?php echo $cat[0]; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="p-10 md:p-16 flex flex-col justify-center items-start lg:items-center lg:min-w-[280px]">
+                    <p class="text-white/80 font-light mb-4 tracking-widest uppercase">3 Award Tracks</p>
+                    <div class="space-y-3 mb-10 w-full">
+                        <?php foreach (['Most Favorite', 'Most Innovative', 'Most Impactful'] as $award): ?>
+                            <div class="border border-white/10 px-5 py-3 text-white/80 font-light tracking-wide">
+                                <?php echo $award; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <a href="#join-eco-pitch"
+                        class="w-full text-center bg-eco-gold text-eco-deep font-bold px-8 py-4 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300">
+                        Join Eco Pitch
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- SPONSORS -->
-<section id="sponsors" class="bg-eco-cream py-16 md:py-20 px-6 text-center">
-    <div class="max-w-[1000px] mx-auto">
-        <span class="text-eco-leaf text-[0.75rem] font-bold tracking-[0.25em] uppercase mb-4 block">Our Supporters</span>
-        <h2 class="text-eco-deep text-[1.5rem] md:text-[1.75rem] font-light leading-snug tracking-widest mb-12 md:mb-16 uppercase">RECOGNIZED BY</h2>
-        <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-20 md:mb-32">
-            <div class="w-[140px] md:w-[200px] h-[80px] md:h-[120px] bg-white border border-eco-stone flex items-center justify-center text-eco-earth text-[0.8rem] md:text-[0.9rem] rounded-xl hover:border-eco-leaf transition-colors duration-300">Logo Sponsor</div>
-            <div class="w-[140px] md:w-[200px] h-[80px] md:h-[120px] bg-white border border-eco-stone flex items-center justify-center text-eco-earth text-[0.8rem] md:text-[0.9rem] rounded-xl hover:border-eco-leaf transition-colors duration-300">Logo Sponsor</div>
-            <div class="w-[140px] md:w-[200px] h-[80px] md:h-[120px] bg-white border border-eco-stone flex items-center justify-center text-eco-earth text-[0.8rem] md:text-[0.9rem] rounded-xl hover:border-eco-leaf transition-colors duration-300">Logo Sponsor</div>
+<section id="sponsors" class="bg-eco-deep py-20 md:py-28 px-6">
+    <div class="container mx-auto">
+
+        <div class="mb-16 md:mb-20">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <?php for ($i = 0; $i < 3; $i++): ?>
+                    <div
+                        class="w-[150px] md:w-[200px] h-[70px] md:h-[90px] border border-white/10 flex items-center justify-center text-white/20 text-sm hover:border-eco-gold/40 hover:text-white/80 transition-all duration-300">
+                        Logo Sponsor
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
 
-        <h2 class="text-eco-deep text-[1.25rem] md:text-[1.5rem] font-light leading-snug tracking-widest mb-12 md:mb-16 uppercase">STRATEGIC PARTNER</h2>
-        <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-20 md:mb-32">
-            <div class="px-8 md:px-12 py-4 md:py-6 bg-eco-stone flex items-center justify-center font-bold text-eco-forest text-lg md:text-xl rounded-xl hover:scale-105 transition-transform duration-300">Kumpul</div>
-            <div class="px-8 md:px-12 py-4 md:py-6 bg-eco-stone flex items-center justify-center font-bold text-eco-forest text-lg md:text-xl rounded-xl hover:scale-105 transition-transform duration-300">Kopernik</div>
+        <div class="border-t border-white/10 pt-16 md:pt-20 mb-16 md:mb-20">
+            <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Strategic
+                Partner</p>
+            <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                <?php foreach (['Kumpul', 'Kopernik'] as $partner): ?>
+                    <div
+                        class="px-8 py-4 border border-white/10 text-white/50 font-semibold text-sm tracking-wide hover:border-eco-gold/40 hover:text-eco-gold transition-all duration-300">
+                        <?php echo $partner; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
 
-        <h2 class="text-eco-deep text-[1.1rem] md:text-[1.25rem] font-light leading-snug tracking-widest mb-12 md:mb-16 uppercase">MEDIA PARTNER</h2>
-        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
-            <div class="w-[120px] md:w-[140px] h-[60px] md:h-[70px] bg-white border border-eco-stone flex items-center justify-center text-eco-earth text-[0.7rem] md:text-[0.8rem] rounded-lg hover:border-eco-leaf">MP Logo</div>
-            <div class="w-[120px] md:w-[140px] h-[60px] md:h-[70px] bg-white border border-eco-stone flex items-center justify-center text-eco-earth text-[0.7rem] md:text-[0.8rem] rounded-lg hover:border-eco-leaf">MP Logo</div>
+        <div class="border-t border-white/10 pt-16 md:pt-20">
+            <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                <?php for ($i = 0; $i < 4; $i++): ?>
+                    <div
+                        class="w-[100px] md:w-[120px] h-[50px] md:h-[60px] border border-white/10 flex items-center justify-center text-white/20 text-sm hover:border-white/20 hover:text-white/80 transition-all duration-300">
+                        MP Logo
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
+
     </div>
 </section>
 
@@ -204,24 +376,14 @@ get_header();
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Initialize Swiper
-        const swiper = new Swiper('.hero-swiper', {
+        new Swiper('.hero-swiper', {
             loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            autoplay: { delay: 5000, disableOnInteraction: false },
             effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            fadeEffect: { crossFade: true },
+            pagination: { el: '.swiper-pagination', clickable: true },
         });
 
-        // Countdown Timer
         var target = new Date('2026-05-28T08:00:00').getTime();
         function tick() {
             var diff = target - Date.now();
@@ -234,40 +396,21 @@ get_header();
         tick();
         setInterval(tick, 1000);
 
-        // Lenis Smooth Scroll
         const lenis = new Lenis();
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
         requestAnimationFrame(raf);
 
-        // Smooth scroll for anchors
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    lenis.scrollTo(targetElement);
-                }
+                const targetEl = document.querySelector(this.getAttribute('href'));
+                if (targetEl) lenis.scrollTo(targetEl);
             });
         });
 
-        // Sticky Header Effect
         const header = document.getElementById('site-header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 50);
         });
-
-        // Initialize Lucide Icons again in case they weren't caught
-        if (window.lucide) {
-            lucide.createIcons();
-        }
     });
 </script>
