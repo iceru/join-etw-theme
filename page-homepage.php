@@ -31,7 +31,7 @@ get_header();
             <h1 class="font-display text-white text-[clamp(3rem,9vw,7rem)] font-light leading-[0.95] mb-8 max-w-4xl">
                 Eco Tourism<br><em>Week 2026</em>
             </h1>
-            <div class="flex flex-wrap gap-3">
+            <!-- <div class="flex flex-wrap gap-3">
                 <?php
                 $roles = [
                     'Volunteer' => '#volunteer',
@@ -50,19 +50,9 @@ get_header();
                         <?php echo esc_html($label); ?>
                     </a>
                 <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
+            </div> -->
 
-    <div class="swiper-pagination absolute bottom-6 left-0 right-0 z-20"></div>
-</section>
-
-<!-- COUNTDOWN -->
-<section id="countdown" class="bg-eco-deep border-t border-white/60">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-
-            <div class="py-14 md:py-20 border-b lg:border-b-0 lg:border-r border-white/60">
+            <div class="mt-10 md:mt-24 max-w-4xl border-white/60">
                 <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-6">Counting Down</p>
                 <div class="flex gap-0">
                     <?php foreach (['days' => 'Days', 'hours' => 'Hrs', 'minutes' => 'Min', 'seconds' => 'Sec'] as $id => $label): ?>
@@ -70,12 +60,23 @@ get_header();
                             class="flex-1 border-r border-white/60 last:border-r-0 pr-4 md:pr-8 mr-4 md:mr-8 last:pr-0 last:mr-0">
                             <span class="font-display text-white text-[3rem] md:text-[5rem] font-light leading-none block"
                                 id="cd-<?php echo $id; ?>">00</span>
-                            <span
-                                class="text-white/30 text-[0.6rem] font-semibold tracking-[0.2em] uppercase mt-1 block"><?php echo $label; ?></span>
+                            <span class="text-white/30 text-[0.6rem] font-semibold tracking-[0.2em] uppercase mt-1 block">
+                                <?php echo $label; ?>
+                            </span>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="swiper-pagination absolute bottom-6 left-0 right-0 z-20"></div>
+</section>
+
+<!-- COUNTDOWN --><!-- <section id="countdown" class="bg-eco-deep border-t border-white/60">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
 
             <div class="py-14 md:py-20 lg:pl-16">
                 <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-6">The Event</p>
@@ -89,7 +90,7 @@ get_header();
 
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- VIDEO -->
 <section class="bg-black">
@@ -103,11 +104,14 @@ get_header();
 <!-- ABOUT -->
 <section id="explanation" class="bg-white">
     <div class="container mx-auto px-6 py-20 md:py-32">
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 md:gap-24 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-16 md:gap-24 items-start">
             <div class="lg:sticky lg:top-32">
-                <p class="text-eco-mid font-semibold tracking-[0.3em] uppercase text-sm mb-4">About</p>
-                <h2 class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-[1.05]">
-                    Regenerating<br>Bali<br><em>Together</em>
+                <h1 class="font-display text-eco-mid mb-4 text-xl">
+                    The Meru Eco Tourism Week 4th Edition
+                </h1>
+                <h2 class="font-display text-eco-deep text-3xl md:text-[44px] font-light leading-[1.05]">
+
+                    Tourism as a Force for Good: Regenerating Bali Together
                 </h2>
             </div>
             <div class="space-y-8 text-[1rem] md:text-[1.05rem] text-gray-800 leading-[1.9] font-light">
@@ -116,13 +120,23 @@ get_header();
                     Bali has long been celebrated as one of the world's most iconic tourism destinations — yet the
                     global narrative has increasingly focused on its environmental pressures.
                 </p>
+                <p>
+                    While these challenges are real, they do not tell the full story.
+                </p>
+
                 <p>Across Bali, a powerful movement is taking place. Hotels, restaurants, local communities, NGOs, and
                     solution providers are actively transforming how tourism operates — shifting from extractive models
                     towards regenerative practices that restore ecosystems, protect biodiversity, and strengthen local
                     livelihoods.</p>
-                <p>Eco Tourism Week 2026 brings this story to the forefront. Rather than focusing on what is broken,
-                    this platform highlights what is working: real solutions, measurable impact, and collaborative
-                    efforts that demonstrate how tourism can become a force for good.</p>
+                <p
+                    class="text-gray-700 text-[1.1rem] md:text-[1.25rem] leading-relaxed font-light border-l-2 border-eco-gold pl-6">
+                    Eco Tourism Week 2026 aims to bring this story to the forefront.
+                </p>
+                <p>
+                    Rather than focusing on what is broken, this platform highlights what is working. It showcases real
+                    solutions, measurable impact, and collaborative efforts that demonstrate how tourism can become a
+                    force for good not only in Bali, but as a model for destinations across the region and globally.
+                </p>
             </div>
         </div>
     </div>
@@ -138,7 +152,7 @@ get_header();
             'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800',
             'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?w=800',
             'https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800',
-            'https://images.unsplash.com/photo-1524492459426-edec9369528f?w=800',
+            'https://gravitybali.com/wp-content/uploads/2025/09/beaches.webp',
         ];
         foreach ($collage_imgs as $i => $img):
             $hidden = $i >= 4 ? 'hidden lg:block' : '';
@@ -152,89 +166,24 @@ get_header();
 </section>
 
 <!-- FACT SHEET -->
-<section id="fact-sheet" class="bg-eco-deep py-20 md:py-32 px-2 md:px-6">
-    <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
-            <div>
-                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Why It Matters</p>
-                <h2 class="font-display text-white text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight">
+<section id="fact-sheet" class="bg-white py-20 md:py-32 px-2 md:px-6">
+    <div class="container mx-auto grid md:grid-cols-2">
+        <div class=" mb-16 md:mb-20 gap-6">
+            <div class="mb-6 lg:mb-10 lg:sticky lg:top-32">
+                <p class="text-eco-forest font-semibold tracking-[0.3em] uppercase text-xs mb-4">Why It Matters</p>
+                <h2
+                    class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight mb-6 lg:mb-10 ">
                     The Market<br>Opportunity
                 </h2>
+                <p class="text-eco-deep font-light max-w-xs leading-relaxed">
+                    Sustainable tourism is one of the fastest-growing investment categories in Southeast Asia.
+                </p>
             </div>
-            <p class="text-white/60 text-sm font-light max-w-xs leading-relaxed">
-                Sustainable tourism is one of the fastest-growing investment categories in Southeast Asia.
-            </p>
         </div>
 
-        <?php
-        $fact_sections = [
-            [
-                'number' => '01',
-                'title' => 'The Multi-Billion Dollar Market Opportunity',
-                'points' => [
-                    ['Global Trajectory', 'The global online travel market is estimated to reach $1,835.6 billion by 2031.'],
-                    ['Regional Growth', "Indonesia's market share is expected to increase the tourism and hotel market by $22 billion until 2026."],
-                    ['F&B Sector', 'Spending on food and beverages is projected to reach $194 billion by 2030, with the transport and food delivery GMV growing to $16.8 billion by 2025.'],
-                ],
-            ],
-            [
-                'number' => '02',
-                'title' => 'The "10,000 Hotels" Untapped Market',
-                'points' => [
-                    ['Direct Access', 'Bali currently has approximately 10,000 hotels, representing a massive potential for eco-business integrations.'],
-                    ['Shift to Regenerative', 'The industry is moving away from extractive models toward regenerative practices that restore ecosystems and protect biodiversity.'],
-                    ['Solution Categories', 'Five key areas: Water & Conservation, Waste Management, Technology & Renewable Energy, Responsible Sourcing, and Experience & Culture.'],
-                ],
-            ],
-            [
-                'number' => '03',
-                'title' => 'Industry Sentiment & Proven Interest',
-                'points' => [
-                    ['Diverse Stakeholders', 'Previous editions attracted HORECA, private sector corporations, NGOs, sustainable suppliers, and tourism academics.'],
-                    ['Business Matching', 'Eco Tourism Week acts as a hub connecting active leading buyers with participating exhibitors.'],
-                    ['Impactful Recognition', 'The Eco Pitch program recognizes the most innovative and impactful solutions, providing high visibility for sustainable startups.'],
-                ],
-            ],
-            [
-                'number' => '04',
-                'title' => 'Bali as a Global Model',
-                'points' => [
-                    ['Movement Leaders', 'Hotels and local communities are already shifting toward practices that strengthen local livelihoods.'],
-                    ['Scalable Solutions', 'ETW 2026 showcases solutions that can serve as a model for destinations globally, not just in Bali.'],
-                    ['Collaborative Ecosystem', 'Real, measurable impact through collaborative efforts between solution providers and tourism operators.'],
-                ],
-            ],
-        ];
-        ?>
-
-        <div class="divide-y divide-white/10 border-t border-white/60">
-            <?php foreach ($fact_sections as $section): ?>
-                <div class="py-10 md:py-14 group">
-
-                    <div class="flex items-baseline gap-4 mb-8">
-                        <span
-                            class="font-display text-white/20 text-2xl font-light leading-none shrink-0"><?php echo $section['number']; ?></span>
-                        <h3
-                            class="font-display text-white text-[1.4rem] md:text-[1.75rem] font-light leading-snug group-hover:text-eco-gold transition-colors duration-300">
-                            <?php echo $section['title']; ?>
-                        </h3>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pl-0 md:pl-14">
-                        <?php foreach ($section['points'] as $point): ?>
-                            <div class="border-l-2 border-eco-gold/40 pl-5">
-                                <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
-                                    <?php echo $point[0]; ?>
-                                </p>
-                                <p class="text-white/80 text-sm md:text-base font-light leading-relaxed">
-                                    <?php echo $point[1]; ?>
-                                </p>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-
-                </div>
-            <?php endforeach; ?>
+        <div class="flex justify-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/potential.png"
+                alt="Discover Bali's Sustainable Business Potential" class="w-full max-w-2xl h-auto" />
         </div>
 
     </div>
@@ -269,7 +218,7 @@ get_header();
             <?php endforeach; ?>
         </div>
         <p
-            class="text-center text-lg text-eco-forest font-light py-4 bg-white border-t border-eco-stone mb-16 md:mb-24">
+            class="text-center text-2xl text-eco-forest font-light py-4 bg-white border-t border-eco-stone mb-16 md:mb-24">
             HORECA · Private Sector · NGOs/CSOs · Sustainable Suppliers · Tourism Academics · Associations · Media ·
             Public
         </p>
@@ -346,20 +295,26 @@ get_header();
         </div>
 
         <div class="border-t border-white/60 pt-16 md:pt-20 mb-16 md:mb-20">
-            <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Strategic
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Strategic
                 Partner</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <?php foreach (['Kumpul', 'Kopernik'] as $partner): ?>
-                    <div
-                        class="px-8 py-4 border border-white/60 text-white/50 font-semibold text-sm tracking-wide hover:border-eco-gold/40 hover:text-eco-gold transition-all duration-300">
-                        <?php echo $partner; ?>
+                <?php
+                $strategic_partners = [
+                    ['name' => 'BTB', 'logo' => 'btb.png'],
+                    ['name' => 'Kopernik', 'logo' => 'kopernik.png'],
+                    ['name' => 'cft', 'logo' => 'cft.png'],
+                ];
+                foreach ($strategic_partners as $partner): ?>
+                    <div class="flex items-center justify-center transition-opacity duration-300">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $partner['logo']; ?>"
+                            alt="<?php echo esc_attr($partner['name']); ?>" class="w-full h-24 object-contain">
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
 
         <div class="border-t border-white/60 pt-16 md:pt-20">
-            <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
             </p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 <?php for ($i = 0; $i < 4; $i++): ?>
