@@ -37,9 +37,9 @@
                     ];
                     foreach ($socials as $label => $svg): ?>
                         <a href="#"
-                            class="inline-flex items-center gap-3 text-eco-deep/90 font-light hover:text-eco-gold transition-colors duration-300 group">
+                            class="inline-flex items-center gap-3 text-eco-deep/90 font-light hover:text-eco-earth transition-colors duration-300 group">
                             <span
-                                class="text-eco-deep/90 group-hover:text-eco-gold transition-colors duration-300"><?php echo $svg; ?></span>
+                                class="text-eco-deep/90 group-hover:text-eco-earth transition-colors duration-300"><?php echo $svg; ?></span>
                             <?php echo $label; ?>
                         </a>
                     <?php endforeach; ?>

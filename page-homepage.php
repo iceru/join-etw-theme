@@ -15,14 +15,16 @@ get_header();
 
 <!-- HERO -->
 <section class="mt-22 ">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/banner-1.png" alt="Eco Tourism Week 2026 – Bali"
-        class="w-full h-full object-cover">
-
+    <a target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeqEYuEsDDvG8c2Ihy38yRO3loPmKJfPSAMgR9AWp_jo6khTA/viewform?usp=send_form">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/banner-1.png" alt="Eco Tourism Week 2026 – Bali"
+            class="w-full h-full object-cover" />
+    </a>
 </section>
 <section id="hero" class="relative pt-24 flex items-end bg-eco-deep overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-t from-eco-deep via-eco-deep/50 to-transparent"></div>
 
-    <div class="relative z-10 w-full pb-16 md:pb-24 px-6">
+    <div class="relative z-10 w-full pb-16 md:pb-24 px-2 md:px-6">
         <div class="container mx-auto">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm md:text-sm mb-4">30-31 May 2026 ·
                 Bali Beach Convention Center, Sanur</p>
@@ -44,7 +46,7 @@ get_header();
                     $is_external = str_starts_with($url, 'http');
                     ?>
                     <a href="<?php echo esc_url($url); ?>" <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
-                        class="px-5 py-2.5 border border-white/30 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
+                        class="px-5 py-2.5 border border-white/70 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
                         <?php echo esc_html($label); ?>
                     </a>
                 <?php endforeach; ?>
@@ -56,16 +58,16 @@ get_header();
 </section>
 
 <!-- COUNTDOWN -->
-<section id="countdown" class="bg-eco-deep border-t border-white/10">
+<section id="countdown" class="bg-eco-deep border-t border-white/60">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
 
-            <div class="py-14 md:py-20 border-b lg:border-b-0 lg:border-r border-white/10">
+            <div class="py-14 md:py-20 border-b lg:border-b-0 lg:border-r border-white/60">
                 <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-6">Counting Down</p>
                 <div class="flex gap-0">
                     <?php foreach (['days' => 'Days', 'hours' => 'Hrs', 'minutes' => 'Min', 'seconds' => 'Sec'] as $id => $label): ?>
                         <div
-                            class="flex-1 border-r border-white/10 last:border-r-0 pr-4 md:pr-8 mr-4 md:mr-8 last:pr-0 last:mr-0">
+                            class="flex-1 border-r border-white/60 last:border-r-0 pr-4 md:pr-8 mr-4 md:mr-8 last:pr-0 last:mr-0">
                             <span class="font-display text-white text-[3rem] md:text-[5rem] font-light leading-none block"
                                 id="cd-<?php echo $id; ?>">00</span>
                             <span
@@ -108,7 +110,7 @@ get_header();
                     Regenerating<br>Bali<br><em>Together</em>
                 </h2>
             </div>
-            <div class="space-y-8 text-[1rem] md:text-[1.05rem] text-gray-400 leading-[1.9] font-light">
+            <div class="space-y-8 text-[1rem] md:text-[1.05rem] text-gray-800 leading-[1.9] font-light">
                 <p
                     class="text-gray-700 text-[1.1rem] md:text-[1.25rem] leading-relaxed font-light border-l-2 border-eco-gold pl-6">
                     Bali has long been celebrated as one of the world's most iconic tourism destinations — yet the
@@ -150,7 +152,7 @@ get_header();
 </section>
 
 <!-- FACT SHEET -->
-<section id="fact-sheet" class="bg-eco-deep py-20 md:py-32 px-6">
+<section id="fact-sheet" class="bg-eco-deep py-20 md:py-32 px-2 md:px-6">
     <div class="container mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
             <div>
@@ -205,7 +207,7 @@ get_header();
         ];
         ?>
 
-        <div class="divide-y divide-white/10 border-t border-white/10">
+        <div class="divide-y divide-white/10 border-t border-white/60">
             <?php foreach ($fact_sections as $section): ?>
                 <div class="py-10 md:py-14 group">
 
@@ -222,9 +224,11 @@ get_header();
                         <?php foreach ($section['points'] as $point): ?>
                             <div class="border-l-2 border-eco-gold/40 pl-5">
                                 <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
-                                    <?php echo $point[0]; ?></p>
+                                    <?php echo $point[0]; ?>
+                                </p>
                                 <p class="text-white/80 text-sm md:text-base font-light leading-relaxed">
-                                    <?php echo $point[1]; ?></p>
+                                    <?php echo $point[1]; ?>
+                                </p>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -237,7 +241,7 @@ get_header();
 </section>
 
 <!-- ETW 2025 FACTS -->
-<section id="facts" class="bg-white py-20 md:py-32 px-6">
+<section id="facts" class="bg-white py-20 md:py-32 px-0 md:px-6">
     <div class="container mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
             <div>
@@ -281,7 +285,7 @@ get_header();
                 </div>
             </div>
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0">
-                <div class="p-10 md:p-16 border-b lg:border-b-0 lg:border-r border-white/10">
+                <div class="p-6 md:p-16 border-b lg:border-b-0 lg:border-r border-white/60">
                     <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition
                     </p>
                     <h2 class="font-display text-white text-[clamp(2.2rem,5vw,4rem)] font-light leading-tight mb-6">
@@ -308,11 +312,11 @@ get_header();
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="p-10 md:p-16 flex flex-col justify-center items-start lg:items-center lg:min-w-[280px]">
+                <div class="p-6 md:p-16 flex flex-col justify-center items-start lg:items-center lg:min-w-[280px]">
                     <p class="text-white/80 font-light mb-4 tracking-widest uppercase">3 Award Tracks</p>
                     <div class="space-y-3 mb-10 w-full">
                         <?php foreach (['Most Favorite', 'Most Innovative', 'Most Impactful'] as $award): ?>
-                            <div class="border border-white/10 px-5 py-3 text-white/80 font-light tracking-wide">
+                            <div class="border border-white/60 px-5 py-3 text-white/80 font-light tracking-wide">
                                 <?php echo $award; ?>
                             </div>
                         <?php endforeach; ?>
@@ -328,41 +332,39 @@ get_header();
 </section>
 
 <!-- SPONSORS -->
-<section id="sponsors" class="bg-eco-deep py-20 md:py-28 px-6">
+<section id="sponsors" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
     <div class="container mx-auto">
 
         <div class="mb-16 md:mb-20">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <?php for ($i = 0; $i < 3; $i++): ?>
-                    <div
-                        class="w-[150px] md:w-[200px] h-[70px] md:h-[90px] border border-white/10 flex items-center justify-center text-white/20 text-sm hover:border-eco-gold/40 hover:text-white/80 transition-all duration-300">
-                        Logo Sponsor
-                    </div>
-                <?php endfor; ?>
+                <div
+                    class="w-[150px] md:w-[250px] flex items-center justify-center text-white/20 text-sm hover:border-eco-gold/40 hover:text-white/80 transition-all duration-300">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="border-t border-white/10 pt-16 md:pt-20 mb-16 md:mb-20">
+        <div class="border-t border-white/60 pt-16 md:pt-20 mb-16 md:mb-20">
             <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Strategic
                 Partner</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 <?php foreach (['Kumpul', 'Kopernik'] as $partner): ?>
                     <div
-                        class="px-8 py-4 border border-white/10 text-white/50 font-semibold text-sm tracking-wide hover:border-eco-gold/40 hover:text-eco-gold transition-all duration-300">
+                        class="px-8 py-4 border border-white/60 text-white/50 font-semibold text-sm tracking-wide hover:border-eco-gold/40 hover:text-eco-gold transition-all duration-300">
                         <?php echo $partner; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
 
-        <div class="border-t border-white/10 pt-16 md:pt-20">
+        <div class="border-t border-white/60 pt-16 md:pt-20">
             <p class="text-white/30 font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
             </p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 <?php for ($i = 0; $i < 4; $i++): ?>
                     <div
-                        class="w-[100px] md:w-[120px] h-[50px] md:h-[60px] border border-white/10 flex items-center justify-center text-white/20 text-sm hover:border-white/20 hover:text-white/80 transition-all duration-300">
+                        class="w-[100px] md:w-[120px] h-[50px] md:h-[60px] border border-white/60 flex items-center justify-center text-white/20 text-sm hover:border-white/20 hover:text-white/80 transition-all duration-300">
                         MP Logo
                     </div>
                 <?php endfor; ?>
