@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Ecotourism Week Landing Page
  */
@@ -44,7 +45,7 @@ get_header();
                 ];
                 foreach ($roles as $label => $url):
                     $is_external = str_starts_with($url, 'http');
-                    ?>
+                ?>
                     <a href="<?php echo esc_url($url); ?>" <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
                         class="px-5 py-2.5 border border-white/70 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
                         <?php echo esc_html($label); ?>
@@ -117,11 +118,8 @@ get_header();
                 <p class="text-white/60 font-light text-sm leading-relaxed mb-8 max-w-sm">
                     Purchase your attendee ticket via Loket and join us on 30–31 May 2026 in Bali.
                 </p>
-                <a href="#"
-                    class="inline-flex items-center justify-center gap-3 border-2 border-eco-gold text-eco-gold font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-eco-gold hover:text-eco-deep transition-colors duration-300 w-full md:w-auto">
-                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 flex-shrink-0">
-                        <path d="M20 12v-2h-2V8a4 4 0 0 0-8 0v2H8v2H6v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8h-2zm-8-4a2 2 0 0 1 4 0v2h-4V8zm4 8h-4v-2h4v2z"/>
-                    </svg>
+                <a href="https://loket.com/event/etw2026" target="_blank" rel="noopener noreferrer"
+                    class="inline-block bg-eco-gold text-eco-deep font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300 text-center w-full md:w-auto">
                     Click Here for Attendee
                 </a>
             </div>
@@ -193,7 +191,7 @@ get_header();
         ];
         foreach ($collage_imgs as $i => $img):
             $hidden = $i >= 4 ? 'hidden lg:block' : '';
-            ?>
+        ?>
             <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
                 <img src="<?php echo $img; ?>" alt="ETW Past Event"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -260,12 +258,12 @@ get_header();
             <div class="bg-white py-14 px-10 text-center">
                 <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">339<sup class="text-2xl align-super">*</sup></p>
                 <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm mb-2">Visitors</p>
-                <p class="text-eco-deep/40 text-[0.65rem] font-light leading-snug mt-1">*1 day Eco Tourism Week 3rd Edition</p>
+                <p class="text-eco-deep text-lg font-light leading-snug mt-1">*1 day Eco Tourism Week 3rd Edition</p>
             </div>
             <div class="bg-white py-14 px-10 text-center flex flex-col items-center justify-center">
                 <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">8+</p>
                 <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm mb-3">Visitor Profiles</p>
-                <p class="text-eco-deep/50 text-[0.65rem] font-light leading-relaxed tracking-wide">
+                <p class="text-eco-deep text-lg font-light leading-relaxed tracking-wide">
                     HORECA · Private Sector · NGOs/CSOs<br>
                     Sustainable Suppliers · Tourism Academics<br>
                     Associations · Media · Public
@@ -334,7 +332,7 @@ get_header();
             <div class="flex flex-wrap justify-center items-end gap-8 md:gap-12">
                 <div class="text-center">
                     <div class="flex items-center justify-center mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-16 object-contain">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
                     </div>
                     <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Diamond</p>
                 </div>
@@ -410,22 +408,59 @@ get_header();
 
     </div>
 </section>
+
+<section>
+
+    <!-- COLLAGE -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 w-full">
+        <?php
+        $collage_imgs = [
+            'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=800',
+            'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800',
+            'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800',
+            'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
+            'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800',
+            'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?w=800',
+            'https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800',
+            'https://gravitybali.com/wp-content/uploads/2025/09/beaches.webp',
+        ];
+        foreach ($collage_imgs as $i => $img):
+            $hidden = $i >= 4 ? 'hidden lg:block' : '';
+        ?>
+            <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
+                <img src="<?php echo $img; ?>" alt="ETW Past Event"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>
 <?php get_footer(); ?>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         new Swiper('.hero-swiper', {
             loop: true,
-            autoplay: { delay: 5000, disableOnInteraction: false },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
             effect: 'fade',
-            fadeEffect: { crossFade: true },
-            pagination: { el: '.swiper-pagination', clickable: true },
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
         });
 
         var target = new Date('2026-05-28T08:00:00').getTime();
+
         function tick() {
             var diff = target - Date.now();
-            var pad = function (n) { return String(Math.floor(Math.max(n, 0))).padStart(2, '0'); };
+            var pad = function(n) {
+                return String(Math.floor(Math.max(n, 0))).padStart(2, '0');
+            };
             document.getElementById('cd-days').textContent = pad(diff / 86400000);
             document.getElementById('cd-hours').textContent = pad((diff % 86400000) / 3600000);
             document.getElementById('cd-minutes').textContent = pad((diff % 3600000) / 60000);
@@ -435,11 +470,15 @@ get_header();
         setInterval(tick, 1000);
 
         const lenis = new Lenis();
-        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
         requestAnimationFrame(raf);
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetEl = document.querySelector(this.getAttribute('href'));
                 if (targetEl) lenis.scrollTo(targetEl);
