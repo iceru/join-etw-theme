@@ -357,7 +357,7 @@ get_header();
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain">
+                            class="h-10 md:h-16 w-auto max-w-[160px] object-contain">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -378,7 +378,7 @@ get_header();
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain">
+                            class="h-10 md:h-16 w-auto max-w-[160px] object-contain">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -398,7 +398,7 @@ get_header();
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain transition-opacity">
+                            class="h-10 md:h-16 w-auto max-w-[160px] object-contain transition-opacity">
                     </div>
                 <?php endforeach; ?>
             </div>
