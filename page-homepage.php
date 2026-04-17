@@ -305,12 +305,12 @@ get_header();
     </div>
 </section>
 <!-- SPONSORS -->
-<section id="sponsors" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
+<section id="sponsors" class="bg-[#FFFDD0] py-20 md:py-28 px-2 md:px-6">
     <div class="container mx-auto">
 
         <!-- Sponsor by -->
         <div class="mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsored By</p>
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsored By</p>
             <div class="space-y-12">
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -318,7 +318,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Diamond</p>
+                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Diamond</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -326,7 +326,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Platinum</p>
+                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Platinum</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -334,7 +334,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Emerald</p>
+                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Emerald</p>
                 </div>
             </div>
         </div>
@@ -343,7 +343,7 @@ get_header();
         <?php $base = get_template_directory_uri(); ?>
 
         <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $supported_by = [
@@ -353,11 +353,11 @@ get_header();
                     ['name' => 'Control Union', 'logo' => '/images/cu.png'],
                 ];
                 foreach ($supported_by as $item): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                    <div>
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
+                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -365,7 +365,7 @@ get_header();
 
         <!-- Partnership -->
         <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $partnerships = [
@@ -374,11 +374,11 @@ get_header();
                     ['name' => 'Wonderful Indonesia', 'logo' => '/images/wonderful.png'],
                 ];
                 foreach ($partnerships as $item): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                    <div>
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
+                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -386,7 +386,7 @@ get_header();
 
         <!-- Media Partner -->
         <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $media_partners = [
@@ -394,11 +394,11 @@ get_header();
                     ['name' => 'Katadata Green', 'logo' => '/images/katadata-green.png'],
                 ];
                 foreach ($media_partners as $item): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                    <div>
                         <img
                             src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
-                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
+                            class="h-10 md:h-12 w-auto max-w-[160px] object-contain transition-opacity">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -406,7 +406,7 @@ get_header();
 
         <!-- Exhibitors -->
         <!-- <div class="border-t border-white/20 pt-16 md:pt-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-4 text-center">Exhibitors</p>
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-4 text-center">Exhibitors</p>
             <p class="text-white/30 text-xs text-center tracking-widest uppercase mb-10">TBC</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 <?php for ($i = 0; $i < 6; $i++): ?>
