@@ -305,7 +305,7 @@ get_header();
     </div>
 </section>
 <!-- SPONSORS -->
-<section id="sponsors" class="bg-[#FFFDD0] py-20 md:py-28 px-2 md:px-6">
+<section id="sponsors" class="bg-stone-50 py-20 md:py-28 px-2 md:px-6">
     <div class="container mx-auto">
 
         <!-- Sponsor by -->
@@ -318,7 +318,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Diamond</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-2">Diamond</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -326,7 +326,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Platinum</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-2">Platinum</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -334,7 +334,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep text-xl tracking-widest uppercase mt-2">Emerald</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-2">Emerald</p>
                 </div>
             </div>
         </div>
@@ -342,7 +342,7 @@ get_header();
         <!-- Supported by -->
         <?php $base = get_template_directory_uri(); ?>
 
-        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
@@ -364,7 +364,7 @@ get_header();
         </div>
 
         <!-- Partnership -->
-        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
@@ -385,13 +385,13 @@ get_header();
         </div>
 
         <!-- Media Partner -->
-        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $media_partners = [
-                    ['name' => 'Katadata', 'logo' => '/images/katadata.png'],
-                    ['name' => 'Katadata Green', 'logo' => '/images/katadata-green.png'],
+                    ['name' => 'Katadata', 'logo' => '/images/katadata-2.png'],
+                    ['name' => 'Katadata Green', 'logo' => '/images/katadata-green-2.png'],
                 ];
                 foreach ($media_partners as $item): ?>
                     <div>
