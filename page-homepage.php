@@ -254,7 +254,7 @@ get_header();
         </div>
 
         <!-- ECO PITCH -->
-        <div class="bg-eco-deep relative overflow-hidden mt-px">
+        <div class="bg-eco-deep relative overflow-hidden mt-12">
             <div class="absolute inset-0 opacity-5">
                 <div class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3"></div>
                 <div class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4"></div>
