@@ -165,7 +165,7 @@ get_header();
                     livelihoods.</p>
                 <p
                     class="text-gray-700 text-[1.1rem] md:text-[1.25rem] leading-relaxed font-light border-l-2 border-eco-gold pl-6">
-                    Eco Tourism Week 2026 aims to bring this story to the forefront.
+                    The Meru Eco Tourism Week 4th Edition aims to bring this story to the forefront.
                 </p>
                 <p>
                     Rather than focusing on what is broken, this platform highlights what is working. It showcases real
@@ -177,26 +177,8 @@ get_header();
     </div>
 
     <!-- COLLAGE -->
-    <div class="grid grid-cols-2 lg:grid-cols-4 w-full">
-        <?php
-        $collage_imgs = [
-            'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=800',
-            'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800',
-            'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800',
-            'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
-            'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800',
-            'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?w=800',
-            'https://images.unsplash.com/photo-1510076857177-7470076d4098?w=800',
-            'https://gravitybali.com/wp-content/uploads/2025/09/beaches.webp',
-        ];
-        foreach ($collage_imgs as $i => $img):
-            $hidden = $i >= 4 ? 'hidden lg:block' : '';
-        ?>
-            <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
-                <img src="<?php echo $img; ?>" alt="ETW Past Event"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            </div>
-        <?php endforeach; ?>
+    <div>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/kolase.jpg" alt="">
     </div>
 </section>
 
@@ -328,38 +310,54 @@ get_header();
 
         <!-- Sponsor by -->
         <div class="mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsor By</p>
-            <div class="flex flex-wrap justify-center items-end gap-8 md:gap-12">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsored By</p>
+            <div class="space-y-8">
                 <div class="text-center">
-                    <div class="flex items-center justify-center mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
+                    <div class="flex items-center space-x-4 justify-center mb-2">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
+                        </div>
                     </div>
-                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Diamond</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Diamond</p>
                 </div>
                 <div class="text-center">
-                    <div class="w-[160px] h-[70px] border border-white/20 flex items-center justify-center text-white/20 text-xs mb-2">
-                        Rainforest Alliance
+                    <div class="flex items-center space-x-4 justify-center mb-2">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT" class="h-24 object-contain">
+                        </div>
                     </div>
-                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Platinum</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Platinum</p>
                 </div>
                 <div class="text-center">
-                    <div class="w-[160px] h-[70px] border border-white/20 flex items-center justify-center text-white/20 text-xs mb-2">
-                        Kemenpar
+                    <div class="flex items-center space-x-4 justify-center mb-2">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar" class="h-24 object-contain">
+                        </div>
                     </div>
-                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Emerald</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Emerald</p>
                 </div>
             </div>
         </div>
 
         <!-- Supported by -->
+        <?php $base = get_template_directory_uri(); ?>
+
         <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
-                $supported_by = ['Ekosistem', 'Booking.com', 'Indonesia Marketing Association', 'Control Union'];
-                foreach ($supported_by as $name): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
-                        <?php echo esc_html($name); ?>
+                $supported_by = [
+                    ['name' => 'Ekosistem', 'logo' => '/assets/images/ekosistem.png'],
+                    ['name' => 'Booking.com', 'logo' => '/assets/images/booking.png'],
+                    ['name' => 'Indonesia Marketing Association', 'logo' => '/assets/images/ima.png'],
+                    ['name' => 'Control Union', 'logo' => '/assets/images/cu.png'],
+                ];
+                foreach ($supported_by as $item): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                        <img
+                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                            alt="<?php echo esc_attr($item['name']); ?>"
+                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -370,10 +368,17 @@ get_header();
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
-                $partnerships = ['Kumpul', 'Bali Tourism Board', 'Wonderful Indonesia'];
-                foreach ($partnerships as $name): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
-                        <?php echo esc_html($name); ?>
+                $partnerships = [
+                    ['name' => 'Kumpul', 'logo' => '/assets/images/kumpul.png'],
+                    ['name' => 'Bali Tourism Board', 'logo' => '/assets/images/btb.png'],
+                    ['name' => 'Wonderful Indonesia', 'logo' => '/assets/images/wonderful.png'],
+                ];
+                foreach ($partnerships as $item): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                        <img
+                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                            alt="<?php echo esc_attr($item['name']); ?>"
+                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -384,17 +389,23 @@ get_header();
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
-                $media_partners = ['Katadata', 'Katadata Green'];
-                foreach ($media_partners as $name): ?>
-                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
-                        <?php echo esc_html($name); ?>
+                $media_partners = [
+                    ['name' => 'Katadata', 'logo' => '/assets/images/katadata.png'],
+                    ['name' => 'Katadata Green', 'logo' => '/assets/images/katadata-green.png'],
+                ];
+                foreach ($media_partners as $item): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
+                        <img
+                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                            alt="<?php echo esc_attr($item['name']); ?>"
+                            class="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-all duration-300">
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
 
         <!-- Exhibitors -->
-        <div class="border-t border-white/20 pt-16 md:pt-20">
+        <!-- <div class="border-t border-white/20 pt-16 md:pt-20">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-4 text-center">Exhibitors</p>
             <p class="text-white/30 text-xs text-center tracking-widest uppercase mb-10">TBC</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
@@ -404,7 +415,7 @@ get_header();
                     </div>
                 <?php endfor; ?>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </section>
