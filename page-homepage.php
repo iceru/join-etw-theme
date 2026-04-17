@@ -28,8 +28,8 @@ get_header();
         <div class="container mx-auto">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm md:text-sm mb-4">30-31 May 2026 ·
                 Bali Beach Convention Center, Sanur</p>
-            <h1 class="font-display text-white text-[clamp(3rem,9vw,7rem)] font-light leading-[0.95] mb-8 max-w-4xl">
-                Eco Tourism<br><em>Week 2026</em>
+            <h1 class="font-display text-white text-[clamp(2rem,6vw,5rem)] font-light leading-[0.95] mb-8 max-w-4xl">
+                The Meru Eco Tourism<br><em>Week 4th Edition</em>
             </h1>
             <!-- <div class="flex flex-wrap gap-3">
                 <?php
@@ -91,6 +91,43 @@ get_header();
         </div>
     </div>
 </section> -->
+
+<!-- PRE-REGISTRATION -->
+<section id="pre-registration" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/20">
+            <div class="p-10 md:p-16 border-b lg:border-b-0 lg:border-r border-white/20 flex flex-col justify-center">
+                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Event</p>
+                <h2 class="font-display text-white text-[clamp(1.8rem,4vw,3rem)] font-light leading-tight mb-4">
+                    Pre-Registration
+                </h2>
+                <p class="text-white/60 font-light text-sm leading-relaxed mb-8 max-w-sm">
+                    Secure your spot at The Meru Eco Tourism Week 4th Edition. Limited slots available.
+                </p>
+                <a href="https://bit.ly/ETWpreregistration" target="_blank" rel="noopener noreferrer"
+                    class="inline-block bg-eco-gold text-eco-deep font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300 text-center w-full md:w-auto">
+                    Click Here to Pre-Register
+                </a>
+            </div>
+            <div class="p-10 md:p-16 flex flex-col justify-center">
+                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Attendee Registration</p>
+                <h2 class="font-display text-white text-[clamp(1.8rem,4vw,3rem)] font-light leading-tight mb-4">
+                    Buy Your Ticket
+                </h2>
+                <p class="text-white/60 font-light text-sm leading-relaxed mb-8 max-w-sm">
+                    Purchase your attendee ticket via Loket and join us on 30–31 May 2026 in Bali.
+                </p>
+                <a href="#"
+                    class="inline-flex items-center justify-center gap-3 border-2 border-eco-gold text-eco-gold font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-eco-gold hover:text-eco-deep transition-colors duration-300 w-full md:w-auto">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 flex-shrink-0">
+                        <path d="M20 12v-2h-2V8a4 4 0 0 0-8 0v2H8v2H6v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8h-2zm-8-4a2 2 0 0 1 4 0v2h-4V8zm4 8h-4v-2h4v2z"/>
+                    </svg>
+                    Click Here for Attendee
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- VIDEO -->
 <section class="bg-black">
@@ -203,58 +240,53 @@ get_header();
 </section>
 
 <!-- ETW 2025 FACTS -->
+<!-- ETW 3RD EDITION FACTS -->
 <section id="facts" class="bg-white py-20 md:py-32 px-0 md:px-6">
     <div class="container mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
             <div>
                 <p class="text-eco-mid font-semibold tracking-[0.3em] uppercase text-sm mb-4">Impact So Far</p>
                 <h2 class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight">
-                    ETW 2025<br>Facts & Figures
+                    Eco Tourism Week<br>3rd Edition Facts & Figures
                 </h2>
             </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-eco-stone mb-px">
-            <?php
-            $stats = [
-                ['50', 'Exhibitors'],
-                ['339', 'Visitors'],
-                ['8+', 'Visitor Profiles'],
-            ];
-            foreach ($stats as $s): ?>
-                <div class="bg-white py-14 px-10 text-center">
-                    <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">
-                        <?php echo $s[0]; ?>
-                    </p>
-                    <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm"><?php echo $s[1]; ?></p>
-                </div>
-            <?php endforeach; ?>
+            <div class="bg-white py-14 px-10 text-center">
+                <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">50</p>
+                <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm">Exhibitors</p>
+            </div>
+            <div class="bg-white py-14 px-10 text-center">
+                <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">339<sup class="text-2xl align-super">*</sup></p>
+                <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm mb-2">Visitors</p>
+                <p class="text-eco-deep/40 text-[0.65rem] font-light leading-snug mt-1">*1 day Eco Tourism Week 3rd Edition</p>
+            </div>
+            <div class="bg-white py-14 px-10 text-center flex flex-col items-center justify-center">
+                <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">8+</p>
+                <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm mb-3">Visitor Profiles</p>
+                <p class="text-eco-deep/50 text-[0.65rem] font-light leading-relaxed tracking-wide">
+                    HORECA · Private Sector · NGOs/CSOs<br>
+                    Sustainable Suppliers · Tourism Academics<br>
+                    Associations · Media · Public
+                </p>
+            </div>
         </div>
-        <p
-            class="text-center text-2xl text-eco-forest font-light py-4 bg-white border-t border-eco-stone mb-16 md:mb-24">
-            HORECA · Private Sector · NGOs/CSOs · Sustainable Suppliers · Tourism Academics · Associations · Media ·
-            Public
-        </p>
 
         <!-- ECO PITCH -->
-        <div class="bg-eco-deep relative overflow-hidden">
+        <div class="bg-eco-deep relative overflow-hidden mt-px">
             <div class="absolute inset-0 opacity-5">
-                <div
-                    class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3">
-                </div>
-                <div
-                    class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4">
-                </div>
+                <div class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3"></div>
+                <div class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4"></div>
             </div>
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0">
                 <div class="p-6 md:p-16 border-b lg:border-b-0 lg:border-r border-white/60">
-                    <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition
-                    </p>
+                    <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition</p>
                     <h2 class="font-display text-white text-[clamp(2.2rem,5vw,4rem)] font-light leading-tight mb-6">
                         Eco Pitch<br><em class="text-eco-gold">2026</em>
                     </h2>
                     <p class="text-white/40 text-sm font-light mb-8 max-w-md leading-relaxed">
-                        5 exhibition categories · 3 award tracks — Most Favorite, Most Innovative, Most Impactful.<br>
+                        5 exhibition categories · 3 award tracks — Most Innovative, Most Impactful, Most Favorite.<br>
                         Open your potential with 10,000 hotels in Bali.
                     </p>
                     <div class="flex flex-col gap-2 max-w-lg">
@@ -267,8 +299,7 @@ get_header();
                             ['Waste Solution Management', 'bg-[#757575] text-white'],
                         ];
                         foreach ($categories as $cat): ?>
-                            <div
-                                class="flex items-center gap-3 <?php echo $cat[1]; ?> px-4 py-2.5 text-xs font-semibold tracking-wide">
+                            <div class="flex items-center gap-3 <?php echo $cat[1]; ?> px-4 py-2.5 text-xs font-semibold tracking-wide">
                                 <?php echo $cat[0]; ?>
                             </div>
                         <?php endforeach; ?>
@@ -277,13 +308,14 @@ get_header();
                 <div class="p-6 md:p-16 flex flex-col justify-center items-start lg:items-center lg:min-w-[280px]">
                     <p class="text-white/80 font-light mb-4 tracking-widest uppercase">3 Award Tracks</p>
                     <div class="space-y-3 mb-10 w-full">
-                        <?php foreach (['Most Favorite', 'Most Innovative', 'Most Impactful'] as $award): ?>
+                        <?php foreach (['Most Innovative', 'Most Impactful', 'Most Favorite'] as $award): ?>
                             <div class="border border-white/60 px-5 py-3 text-white/80 font-light tracking-wide">
                                 <?php echo $award; ?>
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <a href="#join-eco-pitch"
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqEYuEsDDvG8c2Ihy38yRO3loPmKJfPSAMgR9AWp_jo6khTA/viewform"
+                        target="_blank" rel="noopener noreferrer"
                         class="w-full text-center bg-eco-gold text-eco-deep font-bold px-8 py-4 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300">
                         Join Eco Pitch
                     </a>
@@ -292,48 +324,85 @@ get_header();
         </div>
     </div>
 </section>
-
 <!-- SPONSORS -->
 <section id="sponsors" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
     <div class="container mx-auto">
 
+        <!-- Sponsor by -->
         <div class="mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
-            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <div
-                    class="w-[150px] md:w-[250px] flex items-center justify-center text-white/20 text-sm hover:border-eco-gold/40 hover:text-white/80 transition-all duration-300">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsor By</p>
+            <div class="flex flex-wrap justify-center items-end gap-8 md:gap-12">
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-16 object-contain">
+                    </div>
+                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Diamond</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[160px] h-[70px] border border-white/20 flex items-center justify-center text-white/20 text-xs mb-2">
+                        Rainforest Alliance
+                    </div>
+                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Platinum</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[160px] h-[70px] border border-white/20 flex items-center justify-center text-white/20 text-xs mb-2">
+                        Kemenpar
+                    </div>
+                    <p class="text-eco-gold/60 text-[0.6rem] tracking-widest uppercase">Emerald</p>
                 </div>
             </div>
         </div>
 
-        <div class="border-t border-white/60 pt-16 md:pt-20 mb-16 md:mb-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Strategic
-                Partner</p>
-            <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+        <!-- Supported by -->
+        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
-                $strategic_partners = [
-                    ['name' => 'BTB', 'logo' => 'btb.png'],
-                    ['name' => 'Kopernik', 'logo' => 'kopernik.png'],
-                    ['name' => 'cft', 'logo' => 'cft.png'],
-                ];
-                foreach ($strategic_partners as $partner): ?>
-                    <div class="flex items-center justify-center transition-opacity duration-300">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $partner['logo']; ?>"
-                            alt="<?php echo esc_attr($partner['name']); ?>" class="w-full h-24 object-contain">
+                $supported_by = ['Ekosistem', 'Booking.com', 'Indonesia Marketing Association', 'Control Union'];
+                foreach ($supported_by as $name): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
+                        <?php echo esc_html($name); ?>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
 
-        <div class="border-t border-white/60 pt-16 md:pt-20">
-            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
-            </p>
+        <!-- Partnership -->
+        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <?php
+                $partnerships = ['Kumpul', 'Bali Tourism Board', 'Wonderful Indonesia'];
+                foreach ($partnerships as $name): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
+                        <?php echo esc_html($name); ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Media Partner -->
+        <div class="border-t border-white/20 pt-16 md:pt-20 mb-16 md:mb-20">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <?php
+                $media_partners = ['Katadata', 'Katadata Green'];
+                foreach ($media_partners as $name): ?>
+                    <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center text-white/30 text-xs text-center px-2 hover:border-white/40 hover:text-white/60 transition-all duration-300">
+                        <?php echo esc_html($name); ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Exhibitors -->
+        <div class="border-t border-white/20 pt-16 md:pt-20">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-4 text-center">Exhibitors</p>
+            <p class="text-white/30 text-xs text-center tracking-widest uppercase mb-10">TBC</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <?php for ($i = 0; $i < 4; $i++): ?>
-                    <div
-                        class="w-[100px] md:w-[120px] h-[50px] md:h-[60px] border border-white/60 flex items-center justify-center text-white/20 text-sm hover:border-white/20 hover:text-white/80 transition-all duration-300">
-                        MP Logo
+                <?php for ($i = 0; $i < 6; $i++): ?>
+                    <div class="w-[100px] md:w-[120px] h-[50px] md:h-[60px] border border-white/10 flex items-center justify-center text-white/10 text-xs">
+                        TBC
                     </div>
                 <?php endfor; ?>
             </div>
@@ -341,7 +410,6 @@ get_header();
 
     </div>
 </section>
-
 <?php get_footer(); ?>
 
 <script>
