@@ -311,14 +311,14 @@ get_header();
         <!-- Sponsor by -->
         <div class="mb-16 md:mb-20">
             <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsored By</p>
-            <div class="space-y-8">
+            <div class="space-y-12">
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Diamond</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Diamond</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -326,7 +326,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Platinum</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Platinum</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
@@ -334,7 +334,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar" class="h-24 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase">Emerald</p>
+                    <p class="text-eco-gold/60 text-xl tracking-widest uppercase mt-2">Emerald</p>
                 </div>
             </div>
         </div>
@@ -347,10 +347,10 @@ get_header();
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $supported_by = [
-                    ['name' => 'Ekosistem', 'logo' => '/assets/images/ekosistem.png'],
-                    ['name' => 'Booking.com', 'logo' => '/assets/images/booking.png'],
-                    ['name' => 'Indonesia Marketing Association', 'logo' => '/assets/images/ima.png'],
-                    ['name' => 'Control Union', 'logo' => '/assets/images/cu.png'],
+                    ['name' => 'Ekosistem', 'logo' => '/images/ekosistem.png'],
+                    ['name' => 'Booking.com', 'logo' => '/images/booking.png'],
+                    ['name' => 'Indonesia Marketing Association', 'logo' => '/images/ima.png'],
+                    ['name' => 'Control Union', 'logo' => '/images/cu.png'],
                 ];
                 foreach ($supported_by as $item): ?>
                     <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
@@ -369,9 +369,9 @@ get_header();
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $partnerships = [
-                    ['name' => 'Kumpul', 'logo' => '/assets/images/kumpul.png'],
-                    ['name' => 'Bali Tourism Board', 'logo' => '/assets/images/btb.png'],
-                    ['name' => 'Wonderful Indonesia', 'logo' => '/assets/images/wonderful.png'],
+                    ['name' => 'Kumpul', 'logo' => '/images/kumpul.png'],
+                    ['name' => 'Bali Tourism Board', 'logo' => '/images/btb.png'],
+                    ['name' => 'Wonderful Indonesia', 'logo' => '/images/wonderful.png'],
                 ];
                 foreach ($partnerships as $item): ?>
                     <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
@@ -390,8 +390,8 @@ get_header();
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $media_partners = [
-                    ['name' => 'Katadata', 'logo' => '/assets/images/katadata.png'],
-                    ['name' => 'Katadata Green', 'logo' => '/assets/images/katadata-green.png'],
+                    ['name' => 'Katadata', 'logo' => '/images/katadata.png'],
+                    ['name' => 'Katadata Green', 'logo' => '/images/katadata-green.png'],
                 ];
                 foreach ($media_partners as $item): ?>
                     <div class="w-[130px] h-[60px] border border-white/20 flex items-center justify-center p-2 hover:border-white/40 transition-all duration-300">
