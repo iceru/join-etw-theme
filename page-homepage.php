@@ -167,23 +167,36 @@ get_header();
 
 <!-- FACT SHEET -->
 <section id="fact-sheet" class="bg-white py-20 md:py-32 px-2 md:px-6">
-    <div class="container mx-auto grid md:grid-cols-2">
-        <div class=" mb-16 md:mb-20 gap-6">
+    <div class="container mx-auto grid md:grid-cols-2 !px-0">
+        <div class=" mb-16 md:mb-20 gap-6 px-4 md:px-0">
             <div class="mb-6 lg:mb-10 lg:sticky lg:top-32">
                 <p class="text-eco-forest font-semibold tracking-[0.3em] uppercase text-xs mb-4">Why It Matters</p>
                 <h2
                     class="font-display text-eco-deep text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight mb-6 lg:mb-10 ">
-                    The Market<br>Opportunity
+                    Sustainable Business Potential in Bali
                 </h2>
-                <p class="text-eco-deep font-light max-w-xs leading-relaxed">
-                    Sustainable tourism is one of the fastest-growing investment categories in Southeast Asia.
+                <p class="text-eco-deep font-light max-w-md leading-relaxed">
+                    The Indonesian tourism market presents a multi-billion dollar opportunity to provide regenerative
+                    solutions for Bali’s 10,000 hotels. By leveraging proven stakeholder interest and successful
+                    business matching, this initiative transforms sustainable innovation into a scalable global model
+                    for both financial growth and ecological restoration.
                 </p>
             </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="justify-center hidden md:flex">
             <img src="<?php echo get_template_directory_uri(); ?>/images/potential.png"
                 alt="Discover Bali's Sustainable Business Potential" class="w-full max-w-2xl h-auto" />
+        </div>
+        <div class="md:hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/1.png"
+                alt="Discover Bali's Sustainable Business Potential" class="w-full h-auto" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/2.png"
+                alt="Discover Bali's Sustainable Business Potential" class="w-full h-auto" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/3.png"
+                alt="Discover Bali's Sustainable Business Potential" class="w-full h-auto" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/4.png"
+                alt="Discover Bali's Sustainable Business Potential" class="w-full h-auto" />
         </div>
 
     </div>
