@@ -34,7 +34,7 @@
                 ];
                 foreach ($socials as $label => $social): ?>
                     <a href="<?php echo esc_url($social['url']); ?>" aria-label="<?php echo esc_attr($label); ?>"
-                        class="text-white hover:text-eco-gold transition-colors duration-300">
+                        target="_blank" class="text-white hover:text-eco-gold transition-colors duration-300">
                         <?php echo $social['svg']; ?>
                     </a>
                 <?php endforeach; ?>

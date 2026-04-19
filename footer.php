@@ -6,8 +6,10 @@
             <div>
                 <p class="text-eco-deep/70 text-sm font-semibold tracking-wider uppercase mb-6">Organized by
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo-etb.png" alt="Eco Tourism Bali"
-                    class="h-16 md:h-20 w-auto mb-6">
+                <a href="https://ecotourismbali.com" target="_blank">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-etb.png" alt="Eco Tourism Bali"
+                        class="h-16 md:h-20 w-auto mb-6">
+                </a>
             </div>
 
             <div class="md:border-x border-eco-deep/30 md:px-12">
@@ -31,14 +33,19 @@
                 <div class="grid gap-3">
                     <?php
                     $socials = [
-                        'Instagram' => ['url' => 'https://www.instagram.com/ecotourismbali/ ', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>'],
-                        'Youtube' => ['url' => 'https://www.youtube.com/@ecotourismbali', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>'],
-                        'LinkedIn' => ['url' => 'https://www.linkedin.com/company/eco-tourism-bali/ ', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>'],
+                        'Instagram' => ['text' => 'Instagram', 'url' => 'https://www.instagram.com/ecotourismbali/ ', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>'],
+                        'Youtube' => ['text' => 'Youtube', 'url' => 'https://www.youtube.com/@ecotourismbali', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>'],
+                        'LinkedIn' => ['text' => 'LinkedIn', 'url' => 'https://www.linkedin.com/company/eco-tourism-bali/ ', 'svg' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>'],
                     ];
                     foreach ($socials as $label => $social): ?>
                         <a href="<?php echo esc_url($social['url']); ?>" aria-label="<?php echo esc_attr($label); ?>"
-                            class="text-eco-deep transition-colors duration-300">
+                            class="text-eco-deep transition-colors duration-300 flex items-center" target="_blank">
                             <?php echo $social['svg']; ?>
+                            <div>
+                                <span class="ml-3 text-sm font-light">
+                                    <?php echo esc_html($social['text']); ?>
+                                </span>
+                            </div>
                         </a>
                     <?php endforeach; ?>
                 </div>

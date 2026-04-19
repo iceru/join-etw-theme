@@ -45,7 +45,7 @@ get_header();
                 ];
                 foreach ($roles as $label => $url):
                     $is_external = str_starts_with($url, 'http');
-                ?>
+                    ?>
                     <a href="<?php echo esc_url($url); ?>" <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
                         class="px-5 py-2.5 border border-white/70 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
                         <?php echo esc_html($label); ?>
@@ -112,8 +112,13 @@ get_header();
             </div>
             <div class="p-10 md:p-16 flex flex-col justify-center">
                 <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Attendee Registration</p>
-                <h2 class="font-display text-white text-[clamp(1.8rem,4vw,3rem)] font-light leading-tight mb-4">
+                <h2
+                    class="font-display text-white text-[clamp(1.8rem,4vw,3rem)] font-light leading-tight mb-4 inline-flex md:items-center flex-col md:flex-row">
                     Buy Your Ticket
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/loket.png"
+                            class="w-32 md:w-40 md:ml-6 mt-4 md:mt-0" alt="">
+                    </div>
                 </h2>
                 <p class="text-white/60 font-light text-sm leading-relaxed mb-8 max-w-sm">
                     Purchase your attendee ticket via Loket and join us on 30–31 May 2026 in Bali.
@@ -121,6 +126,7 @@ get_header();
                 <a href="https://loket.com/event/etw2026" target="_blank" rel="noopener noreferrer"
                     class="inline-block bg-eco-gold text-eco-deep font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300 text-center w-full md:w-auto">
                     Click Here for Attendee
+
                 </a>
             </div>
         </div>
@@ -238,7 +244,8 @@ get_header();
                 <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm">Exhibitors</p>
             </div>
             <div class="bg-white py-14 px-10 text-center">
-                <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">339<sup class="text-2xl align-super">*</sup></p>
+                <p class="font-display text-eco-deep text-[4rem] md:text-[5.5rem] font-light leading-none mb-2">339<sup
+                        class="text-2xl align-super">*</sup></p>
                 <p class="font-semibold text-eco-mid uppercase tracking-[0.2em] text-sm mb-2">Visitors</p>
                 <p class="text-eco-deep text-lg font-light leading-snug mt-1">*1 day Eco Tourism Week 3rd Edition</p>
             </div>
@@ -256,12 +263,17 @@ get_header();
         <!-- ECO PITCH -->
         <div class="bg-eco-deep relative overflow-hidden mt-12">
             <div class="absolute inset-0 opacity-5">
-                <div class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3"></div>
-                <div class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4"></div>
+                <div
+                    class="absolute top-0 right-0 w-[600px] h-[600px] border border-white rounded-full translate-x-1/3 -translate-y-1/3">
+                </div>
+                <div
+                    class="absolute top-0 right-0 w-[400px] h-[400px] border border-white rounded-full translate-x-1/4 -translate-y-1/4">
+                </div>
             </div>
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0">
                 <div class="p-6 md:p-16 border-b lg:border-b-0 lg:border-r border-white/60">
-                    <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition</p>
+                    <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Competition
+                    </p>
                     <h2 class="font-display text-white text-[clamp(2.2rem,5vw,4rem)] font-light leading-tight mb-6">
                         Eco Pitch<br><em class="text-eco-gold">2026</em>
                     </h2>
@@ -279,7 +291,8 @@ get_header();
                             ['Waste Solution Management', 'bg-[#757575] text-white'],
                         ];
                         foreach ($categories as $cat): ?>
-                            <div class="flex items-center gap-3 <?php echo $cat[1]; ?> px-4 py-2.5 text-xs font-semibold tracking-wide">
+                            <div
+                                class="flex items-center gap-3 <?php echo $cat[1]; ?> px-4 py-2.5 text-xs font-semibold tracking-wide">
                                 <?php echo $cat[0]; ?>
                             </div>
                         <?php endforeach; ?>
@@ -305,7 +318,7 @@ get_header();
     </div>
 </section>
 <!-- SPONSORS -->
-<section id="sponsors" class="bg-stone-50 py-20 md:py-28 px-2 md:px-6">
+<section id="sponsors" class="bg-stone-50 py-20 px-2 md:px-6">
     <div class="container mx-auto">
 
         <!-- Sponsor by -->
@@ -315,26 +328,29 @@ get_header();
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png" alt="The Meru" class="h-24 object-contain">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png"
+                                alt="The Meru" class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-2">Diamond</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-4">Diamond</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT" class="h-24 object-contain">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT"
+                                class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-2">Platinum</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-4">Platinum</p>
                 </div>
                 <div class="text-center">
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar" class="h-24 object-contain">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar"
+                                class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-2">Emerald</p>
+                    <p class="text-eco-deep tracking-widest uppercase mt-4">Emerald</p>
                 </div>
             </div>
         </div>
@@ -342,7 +358,7 @@ get_header();
         <!-- Supported by -->
         <?php $base = get_template_directory_uri(); ?>
 
-        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
+        <div class="border-t border-eco-deep/40 pt-10 md:pt-12 mb-10 md:mb-12">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Supported By</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
@@ -354,8 +370,7 @@ get_header();
                 ];
                 foreach ($supported_by as $item): ?>
                     <div>
-                        <img
-                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                        <img src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
                             class="h-10 md:h-16 w-auto max-w-[160px] object-contain">
                     </div>
@@ -364,7 +379,7 @@ get_header();
         </div>
 
         <!-- Partnership -->
-        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
+        <div class="border-t border-eco-deep/40 pt-10 md:pt-12 mb-10 md:mb-12">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Partnership</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
@@ -375,8 +390,7 @@ get_header();
                 ];
                 foreach ($partnerships as $item): ?>
                     <div>
-                        <img
-                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                        <img src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
                             class="h-10 md:h-16 w-auto max-w-[160px] object-contain">
                     </div>
@@ -385,8 +399,9 @@ get_header();
         </div>
 
         <!-- Media Partner -->
-        <div class="border-t border-eco-deep pt-10 md:pt-12 mb-10 md:mb-12">
-            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner</p>
+        <div class="border-t border-eco-deep/40 pt-10 md:pt-12 mb-10 md:mb-12">
+            <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Media Partner
+            </p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <?php
                 $media_partners = [
@@ -395,8 +410,7 @@ get_header();
                 ];
                 foreach ($media_partners as $item): ?>
                     <div>
-                        <img
-                            src="<?php echo esc_url($base . $item['logo']); ?>"
+                        <img src="<?php echo esc_url($base . $item['logo']); ?>"
                             alt="<?php echo esc_attr($item['name']); ?>"
                             class="h-10 md:h-16 w-auto max-w-[160px] object-contain transition-opacity">
                     </div>
@@ -437,7 +451,7 @@ get_header();
         ];
         foreach ($collage_imgs as $i => $img):
             $hidden = $i >= 4 ? 'hidden lg:block' : '';
-        ?>
+            ?>
             <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
                 <img src="<?php echo $img; ?>" alt="ETW Past Event"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -448,7 +462,7 @@ get_header();
 <?php get_footer(); ?>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         new Swiper('.hero-swiper', {
             loop: true,
             autoplay: {
@@ -469,7 +483,7 @@ get_header();
 
         function tick() {
             var diff = target - Date.now();
-            var pad = function(n) {
+            var pad = function (n) {
                 return String(Math.floor(Math.max(n, 0))).padStart(2, '0');
             };
             document.getElementById('cd-days').textContent = pad(diff / 86400000);
@@ -489,7 +503,7 @@ get_header();
         requestAnimationFrame(raf);
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetEl = document.querySelector(this.getAttribute('href'));
                 if (targetEl) lenis.scrollTo(targetEl);
