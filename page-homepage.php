@@ -331,7 +331,8 @@ get_header();
             <div class="border border-white/20">
                 <div class="px-6 md:px-10 py-6 border-b border-white/20">
                     <p class="text-eco-gold font-semibold tracking-[0.28em] uppercase text-xs mb-2">Day 1</p>
-                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Saturday, 30 May 2026</h3>
+                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Saturday, 30 May 2026
+                    </h3>
                 </div>
                 <div class="px-6 md:px-10 py-6 space-y-6">
                     <?php
@@ -347,13 +348,16 @@ get_header();
                     ];
                     foreach ($schedule_day_one as $item): ?>
                         <div class="border-l border-eco-gold/70 pl-4">
-                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2"><?php echo esc_html($item['time']); ?></p>
-                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase"><?php echo esc_html($item['title']); ?></p>
+                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
+                                <?php echo esc_html($item['time']); ?></p>
+                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase">
+                                <?php echo esc_html($item['title']); ?></p>
                             <?php if (!empty($item['desc'])): ?>
                                 <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
                             <?php endif; ?>
                             <?php if (!empty($item['speakers'])): ?>
-                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?></p>
+                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?>
+                                </p>
                             <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
@@ -363,7 +367,8 @@ get_header();
             <div class="border border-white/20">
                 <div class="px-6 md:px-10 py-6 border-b border-white/20">
                     <p class="text-eco-gold font-semibold tracking-[0.28em] uppercase text-xs mb-2">Day 2</p>
-                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Sunday, 31 May 2026</h3>
+                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Sunday, 31 May 2026
+                    </h3>
                 </div>
                 <div class="px-6 md:px-10 py-6 space-y-6">
                     <?php
@@ -379,13 +384,16 @@ get_header();
                     ];
                     foreach ($schedule_day_two as $item): ?>
                         <div class="border-l border-eco-gold/70 pl-4">
-                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2"><?php echo esc_html($item['time']); ?></p>
-                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase"><?php echo esc_html($item['title']); ?></p>
+                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
+                                <?php echo esc_html($item['time']); ?></p>
+                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase">
+                                <?php echo esc_html($item['title']); ?></p>
                             <?php if (!empty($item['desc'])): ?>
                                 <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
                             <?php endif; ?>
                             <?php if (!empty($item['speakers'])): ?>
-                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?></p>
+                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?>
+                                </p>
                             <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
@@ -443,7 +451,6 @@ get_header();
                     ['name' => 'Ekosistem', 'logo' => '/images/ekosistem.png'],
                     ['name' => 'Booking.com', 'logo' => '/images/booking.png'],
                     ['name' => 'Indonesia Marketing Association', 'logo' => '/images/ima.png'],
-                    ['name' => 'Control Union', 'logo' => '/images/cu.png'],
                 ];
                 foreach ($supported_by as $item): ?>
                     <div>
