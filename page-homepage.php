@@ -317,6 +317,83 @@ get_header();
         </div>
     </div>
 </section>
+<!-- SCHEDULE -->
+<section id="schedule" class="bg-eco-deep py-20 md:py-32 px-2 md:px-6">
+    <div class="container mx-auto">
+        <div class="mb-12 md:mb-16">
+            <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-sm mb-4">Program Agenda</p>
+            <h2 class="font-display text-white text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight">
+                The Meru Eco Tourism Week 2026<br>Schedule
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            <div class="border border-white/20">
+                <div class="px-6 md:px-10 py-6 border-b border-white/20">
+                    <p class="text-eco-gold font-semibold tracking-[0.28em] uppercase text-xs mb-2">Day 1</p>
+                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Saturday, 30 May 2026</h3>
+                </div>
+                <div class="px-6 md:px-10 py-6 space-y-6">
+                    <?php
+                    $schedule_day_one = [
+                        ['time' => '08.30 - 09.30', 'title' => 'Press Conference'],
+                        ['time' => '08.00 - 10.00', 'title' => 'Coffee Break Serving'],
+                        ['time' => '10.00 - 10.30', 'title' => 'Opening: The Meru Eco Tourism Week 4th Edition Day 1'],
+                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Tourism as a Force for Nature: From Extractive Models to a Regenerative Bioeconomy with Katadata Green', 'speakers' => 'WWF* | Suzy Hutomo (Co Founder Eco Tourism Bali) | Anthony Lu (Regional Director, Booking.com) | Didimus Estanto Turuk (Kepala Divisi Pemasaran Nusantara, BPOLBF)'],
+                        ['time' => '12.00 - 13.30', 'title' => 'Lunch Break, Exhibition Visit & Networking'],
+                        ['time' => '13.30 - 14.30', 'title' => 'Session II: Presentation from Verified ECB', 'desc' => 'From Commitment to Implementation: ESG in Action Across Bali\'s Hospitality Sector', 'speakers' => 'Suzy Hutomo (Co-Founder Eco Tourism Bali) | Rahmi Fajar Harini (Co-Founder Eco Tourism Bali) | Made Runatha (Executive Chef & Owner Moksa Ubud) | Oska Van\'t Hoff (Co-Owner Sarinbuana) | Elman Thiana (Sustainability Leader of Munduk Moding) | Simone Gastaldi (General Manager of Amici)'],
+                        ['time' => '14.30 - 16.00', 'title' => 'Session III: Panel Discussion', 'desc' => 'Scaling Sustainable Tourism in Indonesia: Policy Alignment, Climate Resilience, and Innovative Financing', 'speakers' => 'Mochamad Nalendra (Founder & CEO, Wise Step Consulting) | Anthony Wong (Sustainability Consultant, UNDP) | Bank Indonesia Bali* | Alabaster Simanjuntak (Analis Kebijakan Ahli Madya, Ditjen Bina Pembangunan Daerah, Kemendagri) | Bupati Kabupaten Banyumas, Jawa Tengah*'],
+                        ['time' => '16.00', 'title' => 'Closing & Informal Networking'],
+                    ];
+                    foreach ($schedule_day_one as $item): ?>
+                        <div class="border-l border-eco-gold/70 pl-4">
+                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2"><?php echo esc_html($item['time']); ?></p>
+                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase"><?php echo esc_html($item['title']); ?></p>
+                            <?php if (!empty($item['desc'])): ?>
+                                <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
+                            <?php endif; ?>
+                            <?php if (!empty($item['speakers'])): ?>
+                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?></p>
+                            <?php endif; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <div class="border border-white/20">
+                <div class="px-6 md:px-10 py-6 border-b border-white/20">
+                    <p class="text-eco-gold font-semibold tracking-[0.28em] uppercase text-xs mb-2">Day 2</p>
+                    <h3 class="font-display text-white text-[clamp(1.8rem,3vw,2.4rem)] font-light">Sunday, 31 May 2026</h3>
+                </div>
+                <div class="px-6 md:px-10 py-6 space-y-6">
+                    <?php
+                    $schedule_day_two = [
+                        ['time' => '09.00 - 09.10', 'title' => 'Opening: The Meru Eco Tourism Week 4th Edition Day 2'],
+                        ['time' => '09.00 - 10.30', 'title' => 'Eco Business Pitch'],
+                        ['time' => '09.00 - 11.00', 'title' => 'Coffee Break Serving'],
+                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Closing the Loop: Waste Management as the Foundation of Sustainable Tourism in Bali', 'speakers' => 'Suzy Hutomo (Co Founder Eco Tourism Bali) | Ni Nyoman Santi (Pusat Pengendalian Lingkungan Hidup Bali dan Nusa Tenggara, Kemenlh) | Fredic Tanuwijoyo (Co-Founder & CEO Z Bio) | Adhiguna (CEO The Kayon) | Kevin Vignier-Groiez (Founder & CEO Ecolabo8)'],
+                        ['time' => '12.00 - 13.30', 'title' => 'Lunch Break, Exhibition Visit & Networking'],
+                        ['time' => '13.30 - 14.30', 'title' => 'Session II: Fireside Chat', 'desc' => 'Responsible Supply Chains: Driving ESG Performance in Hospitality', 'speakers' => 'Margareth Meutia Legowo (Manager Consumer Campaign and Engagement, Rainforest Alliance) | Coffee Bali Beans* | Deddy Wahyudi (Potato Head Group Procurement Manager) | Kadek Sudiasa (General Secretary of Bali Purchasing Professional Association / BPPA) | Eco Bamboo Bali*'],
+                        ['time' => '14.30 - 16.00', 'title' => 'Eco Climate Badge & Eco Business Pitch Awards'],
+                        ['time' => '16.00', 'title' => 'Official Closing The Meru Eco Tourism Week 4th Edition'],
+                    ];
+                    foreach ($schedule_day_two as $item): ?>
+                        <div class="border-l border-eco-gold/70 pl-4">
+                            <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2"><?php echo esc_html($item['time']); ?></p>
+                            <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase"><?php echo esc_html($item['title']); ?></p>
+                            <?php if (!empty($item['desc'])): ?>
+                                <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
+                            <?php endif; ?>
+                            <?php if (!empty($item['speakers'])): ?>
+                                <p class="text-white/55 text-xs leading-relaxed mt-2"><?php echo esc_html($item['speakers']); ?></p>
+                            <?php endif; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- SPONSORS -->
 <section id="sponsors" class="bg-stone-50 py-20 px-2 md:px-6">
     <div class="container mx-auto">
