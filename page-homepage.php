@@ -514,6 +514,14 @@ get_header();
                     ['name' => 'Ekosistem', 'logo' => '/images/ekosistem.png'],
                     ['name' => 'Booking.com', 'logo' => '/images/booking.png'],
                     ['name' => 'Indonesia Marketing Association', 'logo' => '/images/ima.png'],
+                    ['name' => 'Arkamara Dijiwa Ubud', 'logo' => '/images/Arkamara Dijiwa Ubud_1769666513.jpg'],
+                    ['name' => 'Mozaic Ubud Restaurant', 'logo' => '/images/Mozaic Ubud Restaurant_Logo.png'],
+                    ['name' => 'Maha Hills Resort Bali by Mahaprana Experience', 'logo' => '/images/Maha Hills Resort Bali by Mahaprana Experience_Logo.png'],
+                    ['name' => 'REVIVO Wellness Resort Bali', 'logo' => '/images/REVĪVŌ Wellness Resort Bali_Logo.png'],
+                    ['name' => 'Adiwana Warnakali', 'logo' => '/images/Adiwana Warnakali_Logo.png'],
+                    ['name' => 'Adiwana Resort Jembawan', 'logo' => '/images/Adiwana Resort Jembawan_Logo.png'],
+                    ['name' => 'The Body Shop', 'logo' => '/images/LOGO TBS copy.png'],
+                    ['name' => 'Hatten Wines', 'logo' => '/images/Logo Hatten Wines.jpeg'],
                 ];
                 foreach ($supported_by as $item): ?>
                     <div>
@@ -534,6 +542,8 @@ get_header();
                     ['name' => 'Kumpul', 'logo' => '/images/kumpul.png'],
                     ['name' => 'Bali Tourism Board', 'logo' => '/images/btb.png'],
                     ['name' => 'Wonderful Indonesia', 'logo' => '/images/wonderful.png'],
+                    ['name' => 'KEM', 'logo' => '/images/kem.png'],
+                    ['name' => 'BRCA', 'logo' => '/images/brca.png'],
                     ['name' => 'Melali Mice', 'logo' => '/images/melali.png'],
                 ];
                 foreach ($partnerships as $item): ?>
