@@ -462,9 +462,15 @@ get_header();
                         class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
                         Platinum
                     </p>
+
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT"
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/wi-stif.png"
+                                alt="Wonderful Indonesia Sustainable Tourism Industry Forum"
+                                class="h-32 object-contain">
+                        </div>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar"
                                 class="h-32 object-contain">
                         </div>
                     </div>
@@ -474,9 +480,10 @@ get_header();
                         class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
                         Emerald
                     </p>
+
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar"
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/act-v.png" alt="ACT"
                                 class="h-32 object-contain">
                         </div>
                     </div>
@@ -527,6 +534,7 @@ get_header();
                     ['name' => 'Kumpul', 'logo' => '/images/kumpul.png'],
                     ['name' => 'Bali Tourism Board', 'logo' => '/images/btb.png'],
                     ['name' => 'Wonderful Indonesia', 'logo' => '/images/wonderful.png'],
+                    ['name' => 'Melali Mice', 'logo' => '/images/melali.png'],
                 ];
                 foreach ($partnerships as $item): ?>
                     <div>
