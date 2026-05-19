@@ -368,21 +368,23 @@ get_header();
                 <div class="px-6 md:px-10 py-6 space-y-6">
                     <?php
                     $schedule_day_one = [
-                        ['time' => '08.30 - 09.30', 'title' => 'Press Conference'],
-                        ['time' => '08.00 - 10.00', 'title' => 'Coffee Break Serving'],
-                        ['time' => '10.00 - 10.30', 'title' => 'Opening: The Meru Eco Tourism Week 4th Edition Day 1'],
-                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Tourism as a Force for Nature: From Extractive Models to a Regenerative Bioeconomy with Katadata Green', 'speakers' => 'WWF* | Suzy Hutomo (Co Founder Eco Tourism Bali) | Anthony Lu (Regional Director, Booking.com) | Didimus Estanto Turuk (Kepala Divisi Pemasaran Nusantara, BPOLBF)'],
+                        ['time' => '08.30 - 09.30', 'title' => 'Press Conference', 'speakers' => 'Rizki Handayani Mustafa (Deputy for Industry and Investment, Ministry of Tourism of the Republic of Indonesia) | Suzy Hutomo & Rahmi Fajar Harini (Co-Founder Eco Tourism Bali) | Ed Brea (General Manager of The Meru Sanur)'],
+                        ['time' => '08.00 - 10.00', 'title' => 'Coffee Break'],
+                        ['time' => '10.00 - 10.30', 'title' => 'Opening: The Meru Eco Tourism Week 4th Edition Day 1', 'speakers' => 'Widiyanti Putri Wardhana (Minister of Tourism of the Republic of Indonesia) | Ed Brea (General Manager of The Meru Sanur) | Rahmi Fajar Harini (Program Director Eco Tourism Week)'],
+                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Tourism as a Force for Nature: From Extractive Models to a Regenerative Bioeconomy', 'speakers' => 'Jeany Hartriani (Co-initiator and Deputy Head, Katadata Green) | Ratih Permitha Syury (Marine Tourism Manager, WWF Indonesia) | Suzy Hutomo (Climate Activist) | Anthony Lu (Regional Director for South East Asia & Greater China, Booking.com) | Didimus Estanto Turuk (Head of Nusantara Marketing Division, BPOLBF)'],
                         ['time' => '12.00 - 13.30', 'title' => 'Lunch Break, Exhibition Visit & Networking'],
-                        ['time' => '13.30 - 14.30', 'title' => 'Session II: Presentation from Verified ECB', 'desc' => 'From Commitment to Implementation: ESG in Action Across Bali\'s Hospitality Sector', 'speakers' => 'Suzy Hutomo (Co-Founder Eco Tourism Bali) | Rahmi Fajar Harini (Co-Founder Eco Tourism Bali) | Made Runatha (Executive Chef & Owner Moksa Ubud) | Oska Van\'t Hoff (Co-Owner Sarinbuana) | Elman Thiana (Sustainability Leader of Munduk Moding) | Simone Gastaldi (General Manager of Amici)'],
-                        ['time' => '14.30 - 16.00', 'title' => 'Session III: Panel Discussion', 'desc' => 'Scaling Sustainable Tourism in Indonesia: Policy Alignment, Climate Resilience, and Innovative Financing', 'speakers' => 'Mochamad Nalendra (Founder & CEO, Wise Step Consulting) | Anthony Wong (Sustainability Consultant, UNDP) | Bank Indonesia Bali* | Alabaster Simanjuntak (Analis Kebijakan Ahli Madya, Ditjen Bina Pembangunan Daerah, Kemendagri) | Bupati Kabupaten Banyumas, Jawa Tengah*'],
+                        ['time' => '13.30 - 15.00', 'title' => 'Session II: Panel Discussion in Collaboration with Wonderful Indonesia Sustainable Tourism Industry Forum (WI-STIF)', 'desc' => 'Scaling Sustainable Tourism in Indonesia: Policy Alignment, Climate Resilience, and Innovative Financing', 'speakers' => 'Mochamad Nalendra (Founder & CEO, Wise Steps Consulting) | Anthony Wong (UNDP Sustainability Expert & Founder, Frangipani Langkawi Resort) | Fauzan Hasan (Director for Regional Government Affairs Coordination III, Ministry of Home Affairs of the Republic of Indonesia) | Sadewo Tri Lastiono (Regent of Banyumas Regency, Central Java)'],
+                        ['time' => '15.00 - 16.00', 'title' => 'Session III: Presentation from Verified Eco Climate Badge Members', 'desc' => 'From Commitment to Implementation: ESG in Action Across Bali\'s Hospitality Sector', 'speakers' => 'I Made Runatha (Executive Chef & Owner, Moksa Ubud) | Oska Zappa Van\'t Hoff (Co-Owner & Director, Sarinbuana Eco Lodge) | Elman Thiana (Sustainability Leader of Munduk Moding Plantation Nature Resort & Spa) | Simone Gastaldi (General Manager of Amici)'],
                         ['time' => '16.00', 'title' => 'Closing & Informal Networking'],
                     ];
                     foreach ($schedule_day_one as $item): ?>
                         <div class="border-l border-eco-gold/70 pl-4">
                             <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
-                                <?php echo esc_html($item['time']); ?></p>
+                                <?php echo esc_html($item['time']); ?>
+                            </p>
                             <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase">
-                                <?php echo esc_html($item['title']); ?></p>
+                                <?php echo esc_html($item['title']); ?>
+                            </p>
                             <?php if (!empty($item['desc'])): ?>
                                 <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
                             <?php endif; ?>
@@ -404,21 +406,23 @@ get_header();
                 <div class="px-6 md:px-10 py-6 space-y-6">
                     <?php
                     $schedule_day_two = [
-                        ['time' => '09.00 - 09.10', 'title' => 'Opening: The Meru Eco Tourism Week 4th Edition Day 2'],
-                        ['time' => '09.00 - 10.30', 'title' => 'Eco Business Pitch'],
-                        ['time' => '09.00 - 11.00', 'title' => 'Coffee Break Serving'],
-                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Closing the Loop: Waste Management as the Foundation of Sustainable Tourism in Bali', 'speakers' => 'Suzy Hutomo (Co Founder Eco Tourism Bali) | Ni Nyoman Santi (Pusat Pengendalian Lingkungan Hidup Bali dan Nusa Tenggara, Kemenlh) | Fredic Tanuwijoyo (Co-Founder & CEO Z Bio) | Adhiguna (CEO The Kayon) | Kevin Vignier-Groiez (Founder & CEO Ecolabo8)'],
+                        ['time' => '09.00 - 09.10', 'title' => 'Opening Eco Business Pitch', 'speakers' => 'Amnu Fuadiy (Assistant for Sustainable Tourism Business Management Department, Ministry of Tourism of the Republic of Indonesia)'],
+                        ['time' => '09.00 - 10.30', 'title' => 'Eco Business Pitch: Top 10 Finalists', 'speakers' => 'Bring Back The Light | Ecoway | Seven Clean Seas | Solpoint | Eco-Mantra | Pristinz | Vestu | Noovoleum | Shiva Industries | Waterhub'],
+                        ['time' => '09.00 - 11.00', 'title' => 'Coffee Break'],
+                        ['time' => '10.30 - 12.00', 'title' => 'Session I: Panel Discussion', 'desc' => 'Closing the Loop: Waste Management as the Foundation of Sustainable Tourism in Bali', 'speakers' => 'Vania Herlambang (Sustainability Storyteller & Practitioner) | Ni Nyoman Santi (Head of the Bali-Nusa Tenggara Environmental Control Center, Ministry of Environment of the Republic of Indonesia) | Fredric Tanuwijoyo (Co-Founder & CEO, Z Bio) | Adhiguna (Head of Villa Management Division, BVRMA) | Kevin Vignier-Groiez (Founder & CEO, Ecollabo8)'],
                         ['time' => '12.00 - 13.30', 'title' => 'Lunch Break, Exhibition Visit & Networking'],
-                        ['time' => '13.30 - 14.30', 'title' => 'Session II: Fireside Chat', 'desc' => 'Responsible Supply Chains: Driving ESG Performance in Hospitality', 'speakers' => 'Margareth Meutia Legowo (Manager Consumer Campaign and Engagement, Rainforest Alliance) | Coffee Bali Beans* | Deddy Wahyudi (Potato Head Group Procurement Manager) | Kadek Sudiasa (General Secretary of Bali Purchasing Professional Association / BPPA) | Eco Bamboo Bali*'],
-                        ['time' => '14.30 - 16.00', 'title' => 'Eco Climate Badge & Eco Business Pitch Awards'],
+                        ['time' => '13.30 - 14.30', 'title' => 'Session II: Fireside Chat', 'desc' => 'Responsible Supply Chains: Driving ESG Performance in Hospitality', 'speakers' => 'Meutia Legowo (Manager Consumer Campaign and Engagement, Rainforest Alliance Indonesia; ACT! Project Lead) | Deddy Wahyudi (Potato Head Group Procurement Manager) | Angga Dinala (CEO, Eco Bamboo Bali) | Stevan Chondro (Kopernik Harvest)'],
+                        ['time' => '14.30 - 16.00', 'title' => '2026 Eco Climate Badge Awards & Eco Business Pitch Winners Announcement'],
                         ['time' => '16.00', 'title' => 'Official Closing The Meru Eco Tourism Week 4th Edition'],
                     ];
                     foreach ($schedule_day_two as $item): ?>
                         <div class="border-l border-eco-gold/70 pl-4">
                             <p class="text-eco-gold text-xs font-semibold tracking-[0.2em] uppercase mb-2">
-                                <?php echo esc_html($item['time']); ?></p>
+                                <?php echo esc_html($item['time']); ?>
+                            </p>
                             <p class="text-white text-sm md:text-base font-semibold tracking-wide uppercase">
-                                <?php echo esc_html($item['title']); ?></p>
+                                <?php echo esc_html($item['title']); ?>
+                            </p>
                             <?php if (!empty($item['desc'])): ?>
                                 <p class="text-white/70 text-sm leading-relaxed mt-2"><?php echo esc_html($item['desc']); ?></p>
                             <?php endif; ?>
@@ -440,33 +444,54 @@ get_header();
         <!-- Sponsor by -->
         <div class="mb-16 md:mb-20">
             <p class="text-eco-deep font-semibold tracking-[0.3em] uppercase text-sm mb-10 text-center">Sponsored By</p>
-            <div class="space-y-12">
-                <div class="text-center">
+            <div class="space-y-8">
+                <div class="text-center border-b border-eco-deep/20 pb-8">
+                    <p
+                        class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
+                        Diamond
+                    </p>
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo-the-meru.png"
                                 alt="The Meru" class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-4">Diamond</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center border-b border-eco-deep/20 pb-8">
+                    <p
+                        class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
+                        Platinum
+                    </p>
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/act.png" alt="ACT"
                                 class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-4">Platinum</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center border-b border-eco-deep/20 pb-8">
+                    <p
+                        class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
+                        Emerald
+                    </p>
                     <div class="flex items-center space-x-4 justify-center mb-2">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/kemenpar.png" alt="Kemenpar"
                                 class="h-32 object-contain">
                         </div>
                     </div>
-                    <p class="text-eco-deep tracking-widest uppercase mt-4">Emerald</p>
+                </div>
+                <div class="text-center pb-2">
+                    <p
+                        class="inline-block bg-eco-deep text-white font-semibold tracking-[0.24em] uppercase text-xs px-5 py-2 rounded-full mb-5">
+                        Gold
+                    </p>
+                    <div class="flex items-center space-x-4 justify-center mb-2">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/inflores.png" alt="INFLORES"
+                                class="h-32 object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
