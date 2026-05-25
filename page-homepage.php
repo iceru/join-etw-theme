@@ -12,12 +12,12 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_action('wp_head', function () {
-    ?>
+?>
     <!-- Meta Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
+        ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function () {
+            n = f.fbq = function() {
                 n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
             };
             if (!f._fbq) f._fbq = n;
@@ -39,7 +39,7 @@ add_action('wp_head', function () {
             src="https://www.facebook.com/tr?id=3225326534321512&ev=PageView&noscript=1" alt="" />
     </noscript>
     <!-- End Meta Pixel Code -->
-    <?php
+<?php
 }, 20);
 
 get_header();
@@ -47,11 +47,8 @@ get_header();
 
 <!-- HERO -->
 <section class="mt-22 ">
-    <a target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeqEYuEsDDvG8c2Ihy38yRO3loPmKJfPSAMgR9AWp_jo6khTA/viewform?usp=send_form">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/banner-1.png" alt="Eco Tourism Week 2026 – Bali"
-            class="w-full h-full object-cover" />
-    </a>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/banner-2.jpg" alt="Eco Tourism Week 2026 – Bali"
+        class="w-full h-full object-cover" />
 </section>
 <section id="hero" class="relative pt-24 flex items-end bg-eco-deep overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-t from-eco-deep via-eco-deep/50 to-transparent"></div>
@@ -76,7 +73,7 @@ get_header();
                 ];
                 foreach ($roles as $label => $url):
                     $is_external = str_starts_with($url, 'http');
-                    ?>
+                ?>
                     <a href="<?php echo esc_url($url); ?>" <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
                         class="px-5 py-2.5 border border-white/70 text-white text-sm font-semibold tracking-widest uppercase hover:bg-eco-gold hover:border-eco-gold hover:text-eco-deep transition-all duration-300">
                         <?php echo esc_html($label); ?>
@@ -124,23 +121,10 @@ get_header();
     </div>
 </section> -->
 
-<!-- PRE-REGISTRATION -->
-<section id="pre-registration" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
+<!-- REGISTRATION -->
+<section id="registration" class="bg-eco-deep py-20 md:py-28 px-2 md:px-6">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/20">
-            <div class="p-10 md:p-16 border-b lg:border-b-0 lg:border-r border-white/20 flex flex-col justify-center">
-                <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Join the Event</p>
-                <h2 class="font-display text-white text-[clamp(1.8rem,4vw,3rem)] font-light leading-tight mb-4">
-                    Pre-Registration
-                </h2>
-                <p class="text-white/60 font-light text-sm leading-relaxed mb-8 max-w-sm">
-                    Secure your spot at The Meru Eco Tourism Week 4th Edition. Limited slots available.
-                </p>
-                <a href="https://bit.ly/ETWpreregistration" target="_blank" rel="noopener noreferrer"
-                    class="inline-block bg-eco-gold text-eco-deep font-bold px-10 py-5 uppercase tracking-[0.15em] text-sm hover:bg-white transition-colors duration-300 text-center w-full md:w-auto">
-                    Click Here to Pre-Register
-                </a>
-            </div>
+        <div class="border border-white/20">
             <div class="p-10 md:p-16 flex flex-col justify-center">
                 <p class="text-eco-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">Attendee Registration</p>
                 <h2
@@ -168,7 +152,7 @@ get_header();
 <section class="bg-black">
     <div class="aspect-video w-full max-w-none">
         <video src="<?php echo get_template_directory_uri(); ?>/videos/etw.mp4" controls
-            poster="<?php echo get_template_directory_uri(); ?>/images/banner-1.png"
+            poster="<?php echo get_template_directory_uri(); ?>/images/banner-2.jpg"
             class="w-full h-full object-cover"></video>
     </div>
 </section>
@@ -609,7 +593,7 @@ get_header();
         ];
         foreach ($collage_imgs as $i => $img):
             $hidden = $i >= 4 ? 'hidden lg:block' : '';
-            ?>
+        ?>
             <div class="aspect-square relative overflow-hidden group <?php echo $hidden; ?>">
                 <img src="<?php echo $img; ?>" alt="ETW Past Event"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -620,7 +604,7 @@ get_header();
 <?php get_footer(); ?>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         new Swiper('.hero-swiper', {
             loop: true,
             autoplay: {
@@ -637,11 +621,11 @@ get_header();
             },
         });
 
-        var target = new Date('2026-05-28T08:00:00').getTime();
+        var target = new Date('2026-05-30T08:00:00+08:00').getTime();
 
         function tick() {
             var diff = target - Date.now();
-            var pad = function (n) {
+            var pad = function(n) {
                 return String(Math.floor(Math.max(n, 0))).padStart(2, '0');
             };
             document.getElementById('cd-days').textContent = pad(diff / 86400000);
@@ -661,7 +645,7 @@ get_header();
         requestAnimationFrame(raf);
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetEl = document.querySelector(this.getAttribute('href'));
                 if (targetEl) lenis.scrollTo(targetEl);
